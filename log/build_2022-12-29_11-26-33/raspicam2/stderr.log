@@ -1,0 +1,15 @@
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+bcmhost_LIBS
+    linked by target "raspicam_common" in directory /home/aa/robot_ws/src/raspicam2_node
+mmal_LIBS
+    linked by target "raspicam_common" in directory /home/aa/robot_ws/src/raspicam2_node
+mmalcore_LIBS
+    linked by target "raspicam_common" in directory /home/aa/robot_ws/src/raspicam2_node
+mmalutil_LIBS
+    linked by target "raspicam_common" in directory /home/aa/robot_ws/src/raspicam2_node
+mmalvcclient_LIBS
+    linked by target "raspicam_common" in directory /home/aa/robot_ws/src/raspicam2_node
+vcos_LIBS
+    linked by target "raspicam_common" in directory /home/aa/robot_ws/src/raspicam2_node
+
