@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing move_turtle_pkg.egg-info/PKG-INFO
+writing dependency_links to move_turtle_pkg.egg-info/dependency_links.txt
+writing entry points to move_turtle_pkg.egg-info/entry_points.txt
+writing requirements to move_turtle_pkg.egg-info/requires.txt
+writing top-level names to move_turtle_pkg.egg-info/top_level.txt
+reading manifest file 'move_turtle_pkg.egg-info/SOURCES.txt'
+writing manifest file 'move_turtle_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aa/robot_ws/install/move_turtle_pkg/lib/python3.8/site-packages/move-turtle-pkg.egg-link (link to .)
+Installing hp script to /home/aa/robot_ws/install/move_turtle_pkg/lib/move_turtle_pkg
+Installing ss script to /home/aa/robot_ws/install/move_turtle_pkg/lib/move_turtle_pkg
+
+Installed /home/aa/robot_ws/build/move_turtle_pkg
+running install_data

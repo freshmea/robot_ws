@@ -1,0 +1,9 @@
+{
+  "package_name": "test_interfaces",
+  "non_idl_tuples": [
+    "/home/aa/robot_ws/src/test_interfaces:msg/Num.msg",
+    "/home/aa/robot_ws/src/test_interfaces:msg/Sphere.msg",
+    "/home/aa/robot_ws/src/test_interfaces:srv/AddThreeInts.srv",
+    "/home/aa/robot_ws/src/test_interfaces:srv/MinusThreeInts.srv"
+  ]
+}

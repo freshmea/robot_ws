@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+resource/test_num
+test_num/__init__.py
+test_num/test_service_cli.py
+test_num/test_service_cli2.py
+test_num/test_service_ser.py
+test_num/test_service_ser2.py
+test_num.egg-info/PKG-INFO
+test_num.egg-info/SOURCES.txt
+test_num.egg-info/dependency_links.txt
+test_num.egg-info/entry_points.txt
+test_num.egg-info/requires.txt
+test_num.egg-info/top_level.txt
+test_num.egg-info/zip-safe

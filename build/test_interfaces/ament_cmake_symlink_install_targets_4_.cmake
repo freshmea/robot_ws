@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/test_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" "TARGETS" "test_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/test_interfaces")

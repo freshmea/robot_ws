@@ -1,0 +1,49 @@
+[0.013s] Invoking command in '/home/aa/robot_ws/build/test_interfaces': CMAKE_PREFIX_PATH=/home/aa/robot_ws/install/move_turtle_pkg:/opt/ros/foxy /usr/bin/cmake /home/aa/robot_ws/src/test_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aa/robot_ws/install/test_interfaces
+[0.024s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.043s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.043s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.145s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.149s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.162s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.164s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.240s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.287s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.309s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.427s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[0.427s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.427s]   test_interfaces --arguments-file
+[0.427s]   /home/aa/robot_ws/build/test_interfaces/rosidl_adapter__arguments__test_interfaces.json
+[0.427s]   --output-dir
+[0.427s]   /home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces
+[0.428s]   --output-file
+[0.428s]   /home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces.idls)
+[0.428s]   returned error code 1:
+[0.428s] 
+[0.428s]   Traceback (most recent call last):
+[0.428s] 
+[0.428s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[0.428s]       return _run_code(code, main_globals, None,
+[0.428s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[0.428s]       exec(code, run_globals)
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.428s]       sys.exit(main())
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.428s]       abs_idl_file = convert_to_idl(
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[0.428s]       return convert_srv_to_idl(
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[0.428s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.428s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 843, in parse_service_string
+[0.428s]       raise InvalidServiceSpecification(
+[0.428s] 
+[0.428s]   rosidl_adapter.parser.InvalidServiceSpecification: Could not find separator
+[0.428s]   '---' between request and response
+[0.428s] 
+[0.428s] Call Stack (most recent call first):
+[0.429s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.429s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[0.429s] 
+[0.429s] 
+[0.429s] -- Configuring incomplete, errors occurred!
+[0.429s] See also "/home/aa/robot_ws/build/test_interfaces/CMakeFiles/CMakeOutput.log".
+[0.433s] Invoked command in '/home/aa/robot_ws/build/test_interfaces' returned '1': CMAKE_PREFIX_PATH=/home/aa/robot_ws/install/move_turtle_pkg:/opt/ros/foxy /usr/bin/cmake /home/aa/robot_ws/src/test_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aa/robot_ws/install/test_interfaces

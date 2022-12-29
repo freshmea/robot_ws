@@ -1,0 +1,6 @@
+[console_scripts]
+msc = test_num.test_service_cli:main
+msc2 = test_num.test_service_cli2:main
+mss = test_num.test_service_ser:main
+mss2 = test_num.test_service_ser2:main
+

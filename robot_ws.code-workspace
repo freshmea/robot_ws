@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.autoComplete.extraPaths": [
+			"/home/aa/robot_ws/build/move_turtle_pkg",
+			"/home/aa/robot_ws/install/move_turtle_pkg/lib/python3.8/site-packages",
+			"/opt/ros/foxy/lib/python3.8/site-packages"
+		],
+		"python.analysis.extraPaths": [
+			"/home/aa/robot_ws/build/move_turtle_pkg",
+			"/home/aa/robot_ws/install/move_turtle_pkg/lib/python3.8/site-packages",
+			"/opt/ros/foxy/lib/python3.8/site-packages"
+		]
+	}
+}

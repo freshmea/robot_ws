@@ -1,0 +1,1 @@
+/home/aa/robot_ws/build/test_interfaces/rosidl_typesupport_introspection_c/test_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_c.h

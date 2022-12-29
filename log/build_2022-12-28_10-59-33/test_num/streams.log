@@ -1,0 +1,24 @@
+[0.646s] Invoking command in '/home/aa/robot_ws/build/test_num': PYTHONPATH=/home/aa/robot_ws/build/test_num/prefix_override:/home/aa/robot_ws/install/test_num/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aa/robot_ws/build/test_num/build --no-deps install_data
+[0.802s] running develop
+[0.873s] running egg_info
+[0.873s] creating test_num.egg-info
+[0.873s] writing test_num.egg-info/PKG-INFO
+[0.873s] writing dependency_links to test_num.egg-info/dependency_links.txt
+[0.874s] writing entry points to test_num.egg-info/entry_points.txt
+[0.874s] writing requirements to test_num.egg-info/requires.txt
+[0.874s] writing top-level names to test_num.egg-info/top_level.txt
+[0.874s] writing manifest file 'test_num.egg-info/SOURCES.txt'
+[0.898s] reading manifest file 'test_num.egg-info/SOURCES.txt'
+[0.898s] writing manifest file 'test_num.egg-info/SOURCES.txt'
+[0.920s] running build_ext
+[0.920s] Creating /home/aa/robot_ws/install/test_num/lib/python3.8/site-packages/site.py
+[0.922s] Creating /home/aa/robot_ws/install/test_num/lib/python3.8/site-packages/test-num.egg-link (link to .)
+[0.922s] 
+[0.922s] Installed /home/aa/robot_ws/build/test_num
+[0.922s] running install_data
+[0.922s] creating /home/aa/robot_ws/install/test_num/share/ament_index
+[0.922s] creating /home/aa/robot_ws/install/test_num/share/ament_index/resource_index
+[0.922s] creating /home/aa/robot_ws/install/test_num/share/ament_index/resource_index/packages
+[0.922s] copying resource/test_num -> /home/aa/robot_ws/install/test_num/share/ament_index/resource_index/packages
+[0.923s] copying package.xml -> /home/aa/robot_ws/install/test_num/share/test_num
+[0.955s] Invoked command in '/home/aa/robot_ws/build/test_num' returned '0': PYTHONPATH=/home/aa/robot_ws/build/test_num/prefix_override:/home/aa/robot_ws/install/test_num/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/aa/robot_ws/build/test_num/build --no-deps install_data
