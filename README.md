@@ -5,9 +5,9 @@
 # 2022_12_29
 - - -
 * ros2 seminar data
-* 세미나 데이타 작성 
-* 카메라 작착 및 카메라 테스트 
-	* turtlebot에서 작업. 
+* 세미나 데이타 작성
+* 카메라 작착 및 카메라 테스트
+	* turtlebot에서 작업.
 		* git clone https://github.com/christianrauch/raspicam2_node.git
 		* sudo apt autoremove --purge libgles2-mesa-dev mesa-common-dev 충돌하는 비디오제거
 		* sudo add-apt-repository ppa:ubuntu-pi-flavour-makers/ppa 파이캠 필요한 라이브러리
@@ -21,6 +21,17 @@
 		* sudo apt-get install -fy
 		* sudo dpkg -i /tmp/raspi-config_20160527_all.deb
 	* sudo apt install ros-foxy-image-tnsport* 노트북에 관련 패키지 설치.
+* 터틀봇에 아두이노 붙여서 사용하기.
+
+
+- - -
+# 2023_1_2
+- - -
+*   251  sudo snap remove code
+*   https://code.visualstudio.com/download deb 형식의 code 다운로드
+*   251  sudo dpkg -i code_1.74.2-1671533413_amd64.deb
+
+
 
 
 
