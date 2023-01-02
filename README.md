@@ -30,6 +30,7 @@
 *   251  sudo snap remove code
 *   https://code.visualstudio.com/download deb 형식의 code 다운로드
 *   251  sudo dpkg -i code_1.74.2-1671533413_amd64.deb
+*  교재 공유파일 https://docs.google.com/document/d/1M5vvPW4T-iGDn9OfTm11QD2-iIx4zfwA/edit?usp=sharing&ouid=110802073475643720339&rtpof=true&sd=true
 
 
 
