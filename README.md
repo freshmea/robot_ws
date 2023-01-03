@@ -50,7 +50,7 @@
 - - -
 * bashrc 의 내용 수정 띄어 쓰기 문제.
 	* 소스 수정
-	'''
+	```
 			source /opt/ros/foxy/setup.bash
 			source ~/robot_ws/install/local_setup.bash
 
@@ -99,7 +99,7 @@
 			alias testsub='ros2 run demo_nodes_cpp listener'
 			alias testpubimg='ros2 run image_tools cam2image'
 			alias testsubimg='ros2 run image_tools showimage'
-			'''
+			```
 * 1교시 메세지 퍼블리셔 섭스크라이버 작성.
 * 2교시 노드 분석.
 
