@@ -94,6 +94,14 @@ rosidl_runtime_c/service_type_support_struct.h
 rosidl_typesupport_c/service_type_support_dispatch.h
 /home/aa/robot_ws/build/test_interfaces/rosidl_typesupport_c/test_interfaces/srv/rosidl_typesupport_c/service_type_support_dispatch.h
 
+/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/visibility_control.h
 /opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
@@ -147,6 +155,8 @@ stddef.h
 -
 stdint.h
 -
+geometry_msgs/msg/detail/point__struct.h
+rosidl_generator_c/test_interfaces/msg/detail/geometry_msgs/msg/detail/point__struct.h
 
 rosidl_generator_c/test_interfaces/srv/detail/add_three_ints__struct.h
 stdbool.h

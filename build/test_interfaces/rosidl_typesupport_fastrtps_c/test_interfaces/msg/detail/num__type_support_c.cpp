@@ -49,9 +49,9 @@ static bool _Num__cdr_serialize(
     return false;
   }
   const _Num__ros_msg_type * ros_message = static_cast<const _Num__ros_msg_type *>(untyped_ros_message);
-  // Field name: structure_needs_at_least_one_member
+  // Field name: num
   {
-    cdr << ros_message->structure_needs_at_least_one_member;
+    cdr << ros_message->num;
   }
 
   return true;
@@ -66,9 +66,9 @@ static bool _Num__cdr_deserialize(
     return false;
   }
   _Num__ros_msg_type * ros_message = static_cast<_Num__ros_msg_type *>(untyped_ros_message);
-  // Field name: structure_needs_at_least_one_member
+  // Field name: num
   {
-    cdr >> ros_message->structure_needs_at_least_one_member;
+    cdr >> ros_message->num;
   }
 
   return true;
@@ -88,9 +88,9 @@ size_t get_serialized_size_test_interfaces__msg__Num(
   (void)padding;
   (void)wchar_size;
 
-  // field.name structure_needs_at_least_one_member
+  // field.name num
   {
-    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    size_t item_size = sizeof(ros_message->num);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -118,11 +118,12 @@ size_t max_serialized_size_test_interfaces__msg__Num(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: structure_needs_at_least_one_member
+  // member: num
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   return current_alignment - initial_alignment;

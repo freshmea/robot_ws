@@ -14,6 +14,10 @@
 #include <vector>
 
 
+// Include directives for member types
+// Member 'center'
+#include "geometry_msgs/msg/detail/point__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__test_interfaces__msg__Sphere __attribute__((deprecated))
 #else
@@ -33,29 +37,46 @@ struct Sphere_
   using Type = Sphere_<ContainerAllocator>;
 
   explicit Sphere_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : center(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->radius = 0.0;
     }
   }
 
   explicit Sphere_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : center(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->radius = 0.0;
     }
   }
 
   // field types and members
-  using _structure_needs_at_least_one_member_type =
-    uint8_t;
-  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
+  using _center_type =
+    geometry_msgs::msg::Point_<ContainerAllocator>;
+  _center_type center;
+  using _radius_type =
+    double;
+  _radius_type radius;
 
+  // setters for named parameter idiom
+  Type & set__center(
+    const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
+  {
+    this->center = _arg;
+    return *this;
+  }
+  Type & set__radius(
+    const double & _arg)
+  {
+    this->radius = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -99,7 +120,10 @@ struct Sphere_
   // comparison operators
   bool operator==(const Sphere_ & other) const
   {
-    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
+    if (this->center != other.center) {
+      return false;
+    }
+    if (this->radius != other.radius) {
       return false;
     }
     return true;

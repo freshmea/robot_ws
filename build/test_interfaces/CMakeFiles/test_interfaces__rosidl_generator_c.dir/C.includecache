@@ -33,6 +33,8 @@ string.h
 -
 rcutils/allocator.h
 /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/msg/detail/rcutils/allocator.h
+geometry_msgs/msg/detail/point__functions.h
+/home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/msg/detail/geometry_msgs/msg/detail/point__functions.h
 
 /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/srv/detail/add_three_ints__functions.c
 test_interfaces/srv/detail/add_three_ints__functions.h
@@ -61,6 +63,28 @@ string.h
 -
 rcutils/allocator.h
 /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/srv/detail/rcutils/allocator.h
+
+/opt/ros/foxy/include/geometry_msgs/msg/detail/point__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+/opt/ros/foxy/include/geometry_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+geometry_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
+geometry_msgs/msg/detail/point__struct.h
+/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.h
+
+/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+/opt/ros/foxy/include/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
 
 /opt/ros/foxy/include/rcutils/allocator.h
 stdbool.h
@@ -143,6 +167,8 @@ stddef.h
 -
 stdint.h
 -
+geometry_msgs/msg/detail/point__struct.h
+rosidl_generator_c/test_interfaces/msg/detail/geometry_msgs/msg/detail/point__struct.h
 
 rosidl_generator_c/test_interfaces/msg/rosidl_generator_c__visibility_control.h
 

@@ -107,6 +107,7 @@ CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_
 CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_num_s.c.o: rosidl_generator_c/test_interfaces/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_sphere_s.c.o: rosidl_generator_py/test_interfaces/msg/_sphere_s.c
+CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_sphere_s.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
 CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_sphere_s.c.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_sphere_s.c.o: /usr/include/python3.8/Python.h
 CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_sphere_s.c.o: /usr/include/python3.8/abstract.h

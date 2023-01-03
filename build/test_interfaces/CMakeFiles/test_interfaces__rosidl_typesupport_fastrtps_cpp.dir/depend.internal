@@ -34,6 +34,7 @@ CMakeFiles/test_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesuppo
  /opt/ros/foxy/include/fastcdr/exceptions/Exception.h
  /opt/ros/foxy/include/fastcdr/exceptions/NotEnoughMemoryException.h
  /opt/ros/foxy/include/fastcdr/fastcdr_dll.h
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
  /opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
  /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h

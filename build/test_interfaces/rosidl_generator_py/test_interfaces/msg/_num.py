@@ -53,18 +53,22 @@ class Num(metaclass=Metaclass_Num):
     """Message class 'Num'."""
 
     __slots__ = [
+        '_num',
     ]
 
     _fields_and_field_types = {
+        'num': 'int64',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.num = kwargs.get('num', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -95,9 +99,26 @@ class Num(metaclass=Metaclass_Num):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.num != other.num:
+            return False
         return True
 
     @classmethod
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @property
+    def num(self):
+        """Message field 'num'."""
+        return self._num
+
+    @num.setter
+    def num(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'num' field must be of type 'int'"
+            assert value >= -9223372036854775808 and value < 9223372036854775808, \
+                "The 'num' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._num = value

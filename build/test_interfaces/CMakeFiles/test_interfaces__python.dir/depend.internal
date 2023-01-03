@@ -108,6 +108,7 @@ CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_
  rosidl_generator_c/test_interfaces/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_sphere_s.c.o
  /home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/msg/_sphere_s.c
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h

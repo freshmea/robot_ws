@@ -14,6 +14,9 @@ CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_inter
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/num__functions.c.o: rosidl_generator_c/test_interfaces/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o: rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__functions.h
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o: /opt/ros/foxy/include/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o: /opt/ros/foxy/include/rcutils/allocator.h
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o: /opt/ros/foxy/include/rcutils/macros.h
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o: /opt/ros/foxy/include/rcutils/testing/fault_injection.h

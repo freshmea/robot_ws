@@ -17,7 +17,7 @@ test_interfaces__msg__Num__init(test_interfaces__msg__Num * msg)
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // num
   return true;
 }
 
@@ -27,7 +27,7 @@ test_interfaces__msg__Num__fini(test_interfaces__msg__Num * msg)
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // num
 }
 
 bool
@@ -36,8 +36,8 @@ test_interfaces__msg__Num__are_equal(const test_interfaces__msg__Num * lhs, cons
   if (!lhs || !rhs) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
+  // num
+  if (lhs->num != rhs->num) {
     return false;
   }
   return true;
@@ -51,8 +51,8 @@ test_interfaces__msg__Num__copy(
   if (!input || !output) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
+  // num
+  output->num = input->num;
   return true;
 }
 

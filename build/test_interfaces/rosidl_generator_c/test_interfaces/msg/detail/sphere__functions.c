@@ -11,13 +11,22 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `center`
+#include "geometry_msgs/msg/detail/point__functions.h"
+
 bool
 test_interfaces__msg__Sphere__init(test_interfaces__msg__Sphere * msg)
 {
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // center
+  if (!geometry_msgs__msg__Point__init(&msg->center)) {
+    test_interfaces__msg__Sphere__fini(msg);
+    return false;
+  }
+  // radius
   return true;
 }
 
@@ -27,7 +36,9 @@ test_interfaces__msg__Sphere__fini(test_interfaces__msg__Sphere * msg)
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // center
+  geometry_msgs__msg__Point__fini(&msg->center);
+  // radius
 }
 
 bool
@@ -36,8 +47,14 @@ test_interfaces__msg__Sphere__are_equal(const test_interfaces__msg__Sphere * lhs
   if (!lhs || !rhs) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
+  // center
+  if (!geometry_msgs__msg__Point__are_equal(
+      &(lhs->center), &(rhs->center)))
+  {
+    return false;
+  }
+  // radius
+  if (lhs->radius != rhs->radius) {
     return false;
   }
   return true;
@@ -51,8 +68,14 @@ test_interfaces__msg__Sphere__copy(
   if (!input || !output) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
+  // center
+  if (!geometry_msgs__msg__Point__copy(
+      &(input->center), &(output->center)))
+  {
+    return false;
+  }
+  // radius
+  output->radius = input->radius;
   return true;
 }
 

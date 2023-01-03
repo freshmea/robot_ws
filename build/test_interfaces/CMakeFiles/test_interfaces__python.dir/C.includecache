@@ -62,6 +62,14 @@ test_interfaces/srv/detail/minus_three_ints__struct.h
 test_interfaces/srv/detail/minus_three_ints__functions.h
 /home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/srv/test_interfaces/srv/detail/minus_three_ints__functions.h
 
+/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 
 /usr/include/python3.8/Python.h
@@ -675,6 +683,8 @@ stddef.h
 -
 stdint.h
 -
+geometry_msgs/msg/detail/point__struct.h
+rosidl_generator_c/test_interfaces/msg/detail/geometry_msgs/msg/detail/point__struct.h
 
 rosidl_generator_c/test_interfaces/msg/rosidl_generator_c__visibility_control.h
 

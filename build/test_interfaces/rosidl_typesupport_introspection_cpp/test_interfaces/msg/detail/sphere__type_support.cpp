@@ -37,16 +37,31 @@ void Sphere_fini_function(void * message_memory)
   typed_message->~Sphere();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Sphere_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Sphere_message_member_array[2] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT8,  // type
+    "center",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<geometry_msgs::msg::Point>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(test_interfaces::msg::Sphere, center),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "radius",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(test_interfaces::msg::Sphere, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(test_interfaces::msg::Sphere, radius),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -58,7 +73,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Sphere_messag
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Sphere_message_members = {
   "test_interfaces::msg",  // message namespace
   "Sphere",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(test_interfaces::msg::Sphere),
   Sphere_message_member_array,  // message members
   Sphere_init_function,  // function to initialize message memory (memory has to be allocated)

@@ -17,10 +17,15 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'center'
+#include "geometry_msgs/msg/detail/point__struct.h"
+
 // Struct defined in msg/Sphere in the package test_interfaces.
 typedef struct test_interfaces__msg__Sphere
 {
-  uint8_t structure_needs_at_least_one_member;
+  geometry_msgs__msg__Point center;
+  double radius;
 } test_interfaces__msg__Sphere;
 
 // Struct for a sequence of test_interfaces__msg__Sphere.

@@ -14,6 +14,7 @@ CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_i
  rosidl_typesupport_c/test_interfaces/msg/rosidl_typesupport_c__visibility_control.h
 CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp.o
  /home/aa/robot_ws/build/test_interfaces/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_c/identifier.h

@@ -50,7 +50,15 @@ bool test_interfaces__msg__num__convert_from_py(PyObject * _pymsg, void * _ros_m
     assert(strncmp("test_interfaces.msg._num.Num", full_classname_dest, 28) == 0);
   }
   test_interfaces__msg__Num * ros_message = _ros_message;
-  ros_message->structure_needs_at_least_one_member = 0;
+  {  // num
+    PyObject * field = PyObject_GetAttrString(_pymsg, "num");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->num = PyLong_AsLongLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -72,7 +80,18 @@ PyObject * test_interfaces__msg__num__convert_to_py(void * raw_ros_message)
       return NULL;
     }
   }
-  (void)raw_ros_message;
+  test_interfaces__msg__Num * ros_message = (test_interfaces__msg__Num *)raw_ros_message;
+  {  // num
+    PyObject * field = NULL;
+    field = PyLong_FromLongLong(ros_message->num);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "num", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;

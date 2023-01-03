@@ -15,6 +15,9 @@ CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_inter
  rosidl_generator_c/test_interfaces/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o
  /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__functions.h
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+ /opt/ros/foxy/include/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
  /opt/ros/foxy/include/rcutils/allocator.h
  /opt/ros/foxy/include/rcutils/macros.h
  /opt/ros/foxy/include/rcutils/testing/fault_injection.h

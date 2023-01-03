@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+m_pubsub/__init__.py
+m_pubsub/mpub.py
+m_pubsub/msub.py
+m_pubsub.egg-info/PKG-INFO
+m_pubsub.egg-info/SOURCES.txt
+m_pubsub.egg-info/dependency_links.txt
+m_pubsub.egg-info/entry_points.txt
+m_pubsub.egg-info/requires.txt
+m_pubsub.egg-info/top_level.txt
+m_pubsub.egg-info/zip-safe
+resource/m_pubsub

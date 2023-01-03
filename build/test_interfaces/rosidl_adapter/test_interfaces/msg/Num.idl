@@ -6,7 +6,7 @@
 module test_interfaces {
   module msg {
     struct Num {
-      uint8 structure_needs_at_least_one_member;
+      int64 num;
     };
   };
 };

@@ -17,6 +17,42 @@ namespace test_interfaces
 namespace msg
 {
 
+namespace builder
+{
+
+class Init_Sphere_radius
+{
+public:
+  explicit Init_Sphere_radius(::test_interfaces::msg::Sphere & msg)
+  : msg_(msg)
+  {}
+  ::test_interfaces::msg::Sphere radius(::test_interfaces::msg::Sphere::_radius_type arg)
+  {
+    msg_.radius = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::test_interfaces::msg::Sphere msg_;
+};
+
+class Init_Sphere_center
+{
+public:
+  Init_Sphere_center()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Sphere_radius center(::test_interfaces::msg::Sphere::_center_type arg)
+  {
+    msg_.center = std::move(arg);
+    return Init_Sphere_radius(msg_);
+  }
+
+private:
+  ::test_interfaces::msg::Sphere msg_;
+};
+
+}  // namespace builder
 
 }  // namespace msg
 
@@ -27,7 +63,7 @@ template<>
 inline
 auto build<::test_interfaces::msg::Sphere>()
 {
-  return ::test_interfaces::msg::Sphere(rosidl_runtime_cpp::MessageInitialization::ZERO);
+  return test_interfaces::msg::builder::Init_Sphere_center();
 }
 
 }  // namespace test_interfaces

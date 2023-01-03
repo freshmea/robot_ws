@@ -33,14 +33,14 @@ void Num__rosidl_typesupport_introspection_c__Num_fini_function(void * message_m
 
 static rosidl_typesupport_introspection_c__MessageMember Num__rosidl_typesupport_introspection_c__Num_message_member_array[1] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    "num",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(test_interfaces__msg__Num, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(test_interfaces__msg__Num, num),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

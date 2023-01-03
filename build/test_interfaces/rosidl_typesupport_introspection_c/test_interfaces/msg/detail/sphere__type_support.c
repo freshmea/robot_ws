@@ -12,6 +12,12 @@
 #include "test_interfaces/msg/detail/sphere__struct.h"
 
 
+// Include directives for member types
+// Member `center`
+#include "geometry_msgs/msg/point.h"
+// Member `center`
+#include "geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,16 +37,31 @@ void Sphere__rosidl_typesupport_introspection_c__Sphere_fini_function(void * mes
   test_interfaces__msg__Sphere__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Sphere__rosidl_typesupport_introspection_c__Sphere_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember Sphere__rosidl_typesupport_introspection_c__Sphere_message_member_array[2] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    "center",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(test_interfaces__msg__Sphere, center),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "radius",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(test_interfaces__msg__Sphere, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(test_interfaces__msg__Sphere, radius),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -52,7 +73,7 @@ static rosidl_typesupport_introspection_c__MessageMember Sphere__rosidl_typesupp
 static const rosidl_typesupport_introspection_c__MessageMembers Sphere__rosidl_typesupport_introspection_c__Sphere_message_members = {
   "test_interfaces__msg",  // message namespace
   "Sphere",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(test_interfaces__msg__Sphere),
   Sphere__rosidl_typesupport_introspection_c__Sphere_message_member_array,  // message members
   Sphere__rosidl_typesupport_introspection_c__Sphere_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -70,6 +91,8 @@ static rosidl_message_type_support_t Sphere__rosidl_typesupport_introspection_c_
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_test_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, test_interfaces, msg, Sphere)() {
+  Sphere__rosidl_typesupport_introspection_c__Sphere_message_member_array[0].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Point)();
   if (!Sphere__rosidl_typesupport_introspection_c__Sphere_message_type_support_handle.typesupport_identifier) {
     Sphere__rosidl_typesupport_introspection_c__Sphere_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

@@ -37,7 +37,7 @@ struct Num_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->num = 0ll;
     }
   }
 
@@ -47,15 +47,22 @@ struct Num_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->num = 0ll;
     }
   }
 
   // field types and members
-  using _structure_needs_at_least_one_member_type =
-    uint8_t;
-  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
+  using _num_type =
+    int64_t;
+  _num_type num;
 
+  // setters for named parameter idiom
+  Type & set__num(
+    const int64_t & _arg)
+  {
+    this->num = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -99,7 +106,7 @@ struct Num_
   // comparison operators
   bool operator==(const Num_ & other) const
   {
-    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
+    if (this->num != other.num) {
       return false;
     }
     return true;

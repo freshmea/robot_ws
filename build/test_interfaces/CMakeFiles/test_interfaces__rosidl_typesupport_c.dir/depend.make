@@ -13,6 +13,7 @@ CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_i
 CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/num__type_support.cpp.o: rosidl_typesupport_c/test_interfaces/msg/rosidl_typesupport_c__visibility_control.h
 
 CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp.o: rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp
+CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
 CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
 CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp.o: /opt/ros/foxy/include/rosidl_typesupport_c/identifier.h

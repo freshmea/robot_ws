@@ -2,11 +2,14 @@
 // with input from test_interfaces/msg/Sphere.msg
 // generated code does not contain a copyright notice
 
+#include "geometry_msgs/msg/Point.idl"
 
 module test_interfaces {
   module msg {
     struct Sphere {
-      uint8 structure_needs_at_least_one_member;
+      geometry_msgs::msg::Point center;
+
+      double radius;
     };
   };
 };

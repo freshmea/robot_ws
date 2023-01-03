@@ -17,6 +17,26 @@ namespace test_interfaces
 namespace msg
 {
 
+namespace builder
+{
+
+class Init_Num_num
+{
+public:
+  Init_Num_num()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  ::test_interfaces::msg::Num num(::test_interfaces::msg::Num::_num_type arg)
+  {
+    msg_.num = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::test_interfaces::msg::Num msg_;
+};
+
+}  // namespace builder
 
 }  // namespace msg
 
@@ -27,7 +47,7 @@ template<>
 inline
 auto build<::test_interfaces::msg::Num>()
 {
-  return ::test_interfaces::msg::Num(rosidl_runtime_cpp::MessageInitialization::ZERO);
+  return test_interfaces::msg::builder::Init_Num_num();
 }
 
 }  // namespace test_interfaces

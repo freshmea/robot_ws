@@ -3,6 +3,7 @@
 
 CMakeFiles/test_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/test_interfaces/_test_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o
  /home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/_test_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/action_type_support_struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/service_type_support_struct.h

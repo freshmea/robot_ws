@@ -20,7 +20,7 @@ extern "C"
 // Struct defined in msg/Num in the package test_interfaces.
 typedef struct test_interfaces__msg__Num
 {
-  uint8_t structure_needs_at_least_one_member;
+  int64_t num;
 } test_interfaces__msg__Num;
 
 // Struct for a sequence of test_interfaces__msg__Num.

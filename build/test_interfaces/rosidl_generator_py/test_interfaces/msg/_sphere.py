@@ -40,6 +40,10 @@ class Metaclass_Sphere(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__sphere
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__sphere
 
+            from geometry_msgs.msg import Point
+            if Point.__class__._TYPE_SUPPORT is None:
+                Point.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -53,18 +57,27 @@ class Sphere(metaclass=Metaclass_Sphere):
     """Message class 'Sphere'."""
 
     __slots__ = [
+        '_center',
+        '_radius',
     ]
 
     _fields_and_field_types = {
+        'center': 'geometry_msgs/Point',
+        'radius': 'double',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        from geometry_msgs.msg import Point
+        self.center = kwargs.get('center', Point())
+        self.radius = kwargs.get('radius', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -95,9 +108,40 @@ class Sphere(metaclass=Metaclass_Sphere):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.center != other.center:
+            return False
+        if self.radius != other.radius:
+            return False
         return True
 
     @classmethod
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @property
+    def center(self):
+        """Message field 'center'."""
+        return self._center
+
+    @center.setter
+    def center(self, value):
+        if __debug__:
+            from geometry_msgs.msg import Point
+            assert \
+                isinstance(value, Point), \
+                "The 'center' field must be a sub message of type 'Point'"
+        self._center = value
+
+    @property
+    def radius(self):
+        """Message field 'radius'."""
+        return self._radius
+
+    @radius.setter
+    def radius(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'radius' field must be of type 'float'"
+        self._radius = value
