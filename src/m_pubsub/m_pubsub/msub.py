@@ -5,7 +5,7 @@ from rclpy.qos import QoSProfile
 
 class M_sub(Node):
   def __init__(self):
-    super().__init__('helloworld_subscriber')
+    super().__init__('massage_subscriber')
     self.qos_profile = QoSProfile(depth = 10)
     self.helloworld_subscriber = self.create_subscription(String, 'massage', self.subscriber_massage, self.qos_profile)
 

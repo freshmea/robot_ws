@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing m_pubsub.egg-info/PKG-INFO
+writing dependency_links to m_pubsub.egg-info/dependency_links.txt
+writing entry points to m_pubsub.egg-info/entry_points.txt
+writing requirements to m_pubsub.egg-info/requires.txt
+writing top-level names to m_pubsub.egg-info/top_level.txt
+reading manifest file 'm_pubsub.egg-info/SOURCES.txt'
+writing manifest file 'm_pubsub.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aa/robot_ws/install/m_pubsub/lib/python3.8/site-packages/m-pubsub.egg-link (link to .)
+Installing mp script to /home/aa/robot_ws/install/m_pubsub/lib/m_pubsub
+Installing ms script to /home/aa/robot_ws/install/m_pubsub/lib/m_pubsub
+Installing mt script to /home/aa/robot_ws/install/m_pubsub/lib/m_pubsub
+
+Installed /home/aa/robot_ws/build/m_pubsub
+running install_data

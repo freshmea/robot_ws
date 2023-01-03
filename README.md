@@ -98,3 +98,8 @@
 			alias testpubimg='ros2 run image_tools cam2image'
 			alias testsubimg='ros2 run image_tools showimage'
 * 1교시 메세지 퍼블리셔 섭스크라이버 작성.
+* 2교시 노드 분석.
+
+
+*  Saas 연습 google slide  : https://docs.google.com/presentation/d/1jwksntFzRzFbpEtHJCzOahT5loVWIPO-PtTMm4BnxtY/edit?usp=sharing
+
