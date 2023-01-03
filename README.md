@@ -49,7 +49,8 @@
 # 2023_1_3
 - - -
 * bashrc 의 내용 수정 띄어 쓰기 문제.
-	* 	source /opt/ros/foxy/setup.bash
+	* 소스 수정
+			source /opt/ros/foxy/setup.bash
 			source ~/robot_ws/install/local_setup.bash
 
 			source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
@@ -110,3 +111,5 @@
 * ros2 service call /turtle1/set_pen turtlesim/srv/SetPen "{r: 100, g: 50, b: 200, width : 5}"
 * 한 화면에서 두개의 터틀 동시에 움직이기  --> 다 한 친구는 세개나 네개를 완성시켜보세요.
 
+source /opt/ros/foxy/setup.bash
+source ~/robot_ws/install/local_setup.bash

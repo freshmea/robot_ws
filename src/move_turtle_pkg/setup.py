@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'move_turtle = move_turtle_pkg.move_turtle:main'
+            'move_turtle = move_turtle_pkg.move_turtle:main',
+            'move_turtle2 = move_turtle_pkg.move_turtle2:main'
         ],
     },
 )

@@ -14,17 +14,19 @@ class Move_turtle(Node):
 
   def turtle_move(self):
     msg = Twist()
-    msg.linear.x = self.velocity
+    msg.linear.x = 5.0
     msg.linear.y = 0.0
     msg.linear.z = 0.0
 
     msg.angular.x = 0.0
     msg.angular.y = 0.0
-    msg.angular.z = 1.0
+    msg.angular.z = self.velocity*5
 
     self.move_turtle.publish(msg)
     self.get_logger().info(f'Published mesage: {msg.linear}, {msg.angular}')
-    self.velocity += 0.01
+    self.velocity += 0.08
+    if self.velocity > 2:
+      self.velocity = 0.0
 
 
 def main(args=None):

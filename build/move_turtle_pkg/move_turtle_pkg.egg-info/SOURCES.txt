@@ -10,6 +10,7 @@ setup.py
 ../../build/move_turtle_pkg/move_turtle_pkg.egg-info/zip-safe
 move_turtle_pkg/__init__.py
 move_turtle_pkg/move_turtle.py
+move_turtle_pkg/move_turtle2.py
 move_turtle_pkg/string_sub.py
 move_turtle_pkg.egg-info/PKG-INFO
 move_turtle_pkg.egg-info/SOURCES.txt
