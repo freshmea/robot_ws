@@ -103,3 +103,10 @@
 
 *  Saas 연습 google slide  : https://docs.google.com/presentation/d/1jwksntFzRzFbpEtHJCzOahT5loVWIPO-PtTMm4BnxtY/edit?usp=sharing
 
+* 코딩으로 만든 node 를 통해서 turtlesim 움직이기
+* ros2 run packagename command --ros-args -r __ns:=/namespcename
+* ros2 service call /spawn turtlesim/srv/Spawn "{x: 5.5 , y: 7.0 , theta: 1.5, name: 'turtle2'}"
+	터틀심 스폰 시키기
+* ros2 service call /turtle1/set_pen turtlesim/srv/SetPen "{r: 100, g: 50, b: 200, width : 5}"
+* 한 화면에서 두개의 터틀 동시에 움직이기  --> 다 한 친구는 세개나 네개를 완성시켜보세요.
+
