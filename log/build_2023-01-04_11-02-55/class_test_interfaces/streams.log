@@ -1,0 +1,48 @@
+[0.052s] Invoking command in '/home/aa/robot_ws/build/class_test_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aa/robot_ws/install/test_num:/home/aa/robot_ws/install/move_turtle_pkg:/home/aa/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake /home/aa/robot_ws/src/class_test_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aa/robot_ws/install/class_test_interfaces
+[0.237s] -- The C compiler identification is GNU 9.4.0
+[0.344s] -- The CXX compiler identification is GNU 9.4.0
+[0.357s] -- Check for working C compiler: /usr/bin/cc
+[0.497s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.500s] -- Detecting C compiler ABI info
+[0.663s] -- Detecting C compiler ABI info - done
+[0.676s] -- Detecting C compile features
+[0.677s] -- Detecting C compile features - done
+[0.685s] -- Check for working CXX compiler: /usr/bin/c++
+[0.793s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.794s] -- Detecting CXX compiler ABI info
+[0.949s] -- Detecting CXX compiler ABI info - done
+[0.964s] -- Detecting CXX compile features
+[0.965s] -- Detecting CXX compile features - done
+[0.978s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.027s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.027s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.301s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.353s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.472s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.475s] -- Added test 'lint_cmake' to check CMake code style
+[1.478s] -- Added test 'xmllint' to check XML markup files
+[1.482s] -- Configuring done
+[1.485s] -- Generating done
+[1.487s] -- Build files have been written to: /home/aa/robot_ws/build/class_test_interfaces
+[1.496s] Invoked command in '/home/aa/robot_ws/build/class_test_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aa/robot_ws/install/test_num:/home/aa/robot_ws/install/move_turtle_pkg:/home/aa/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake /home/aa/robot_ws/src/class_test_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aa/robot_ws/install/class_test_interfaces
+[1.498s] Invoking command in '/home/aa/robot_ws/build/class_test_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aa/robot_ws/install/test_num:/home/aa/robot_ws/install/move_turtle_pkg:/home/aa/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/aa/robot_ws/build/class_test_interfaces -- -j2 -l2
+[1.561s] Invoked command in '/home/aa/robot_ws/build/class_test_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aa/robot_ws/install/test_num:/home/aa/robot_ws/install/move_turtle_pkg:/home/aa/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake --build /home/aa/robot_ws/build/class_test_interfaces -- -j2 -l2
+[1.655s] Invoking command in '/home/aa/robot_ws/build/class_test_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aa/robot_ws/install/test_num:/home/aa/robot_ws/install/move_turtle_pkg:/home/aa/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake --install /home/aa/robot_ws/build/class_test_interfaces
+[1.665s] -- Install configuration: ""
+[1.666s] -- Execute custom install script
+[1.667s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/ament_index/resource_index/package_run_dependencies/class_test_interfaces
+[1.678s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/ament_index/resource_index/parent_prefix_path/class_test_interfaces
+[1.689s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/ament_prefix_path.sh
+[1.703s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/ament_prefix_path.dsv
+[1.714s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/path.sh
+[1.726s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/path.dsv
+[1.738s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.bash
+[1.750s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.sh
+[1.761s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.zsh
+[1.772s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.dsv
+[1.783s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/package.dsv
+[1.794s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/ament_index/resource_index/packages/class_test_interfaces
+[1.805s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/cmake/class_test_interfacesConfig.cmake
+[1.816s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/cmake/class_test_interfacesConfig-version.cmake
+[1.829s] -- Symlinking: /home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/package.xml
+[1.845s] Invoked command in '/home/aa/robot_ws/build/class_test_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aa/robot_ws/install/test_num:/home/aa/robot_ws/install/move_turtle_pkg:/home/aa/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake --install /home/aa/robot_ws/build/class_test_interfaces

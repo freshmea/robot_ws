@@ -6,6 +6,7 @@ test_num/__init__.py
 test_num/test_service_cli.py
 test_num/test_service_cli2.py
 test_num/test_service_ser.py
+test_num/test_service_ser1.py
 test_num/test_service_ser2.py
 test_num.egg-info/PKG-INFO
 test_num.egg-info/SOURCES.txt

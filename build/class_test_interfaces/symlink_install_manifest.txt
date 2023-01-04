@@ -1,0 +1,15 @@
+/home/aa/robot_ws/install/class_test_interfaces/share/ament_index/resource_index/package_run_dependencies/class_test_interfaces
+/home/aa/robot_ws/install/class_test_interfaces/share/ament_index/resource_index/parent_prefix_path/class_test_interfaces
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/ament_prefix_path.sh
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/ament_prefix_path.dsv
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/path.sh
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/environment/path.dsv
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.bash
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.sh
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.zsh
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/local_setup.dsv
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/package.dsv
+/home/aa/robot_ws/install/class_test_interfaces/share/ament_index/resource_index/packages/class_test_interfaces
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/cmake/class_test_interfacesConfig.cmake
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/cmake/class_test_interfacesConfig-version.cmake
+/home/aa/robot_ws/install/class_test_interfaces/share/class_test_interfaces/package.xml

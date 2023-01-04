@@ -112,6 +112,16 @@ alias testsubimg='ros2 run image_tools showimage'
 	터틀심 스폰 시키기
 * ros2 service call /turtle1/set_pen turtlesim/srv/SetPen "{r: 100, g: 50, b: 200, width : 5}"
 * 한 화면에서 두개의 터틀 동시에 움직이기  --> 다 한 친구는 세개나 네개를 완성시켜보세요.
+* opencv 실습
 
-source /opt/ros/foxy/setup.bash
-source ~/robot_ws/install/local_setup.bash
+* vmware workstation 17 에서 네트워크 브릿지로 설정 하는 방법 찾아 보기
+	* https://dany-it.tistory.com/338
+	* https://cocatv.tistory.com/84
+
+
+- - -
+# 2023_1_4
+- - -
+* 서비스 설명
+* 서비스 코드 작성
+* 인터페이스 패키지 만들기
