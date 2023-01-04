@@ -1,6 +1,12 @@
 source;share/class_test_interfaces/hook/cmake_prefix_path.ps1
 source;share/class_test_interfaces/hook/cmake_prefix_path.dsv
 source;share/class_test_interfaces/hook/cmake_prefix_path.sh
+source;share/class_test_interfaces/hook/ld_library_path_lib.ps1
+source;share/class_test_interfaces/hook/ld_library_path_lib.dsv
+source;share/class_test_interfaces/hook/ld_library_path_lib.sh
+source;share/class_test_interfaces/hook/pythonpath.ps1
+source;share/class_test_interfaces/hook/pythonpath.dsv
+source;share/class_test_interfaces/hook/pythonpath.sh
 source;share/class_test_interfaces/local_setup.bash
 source;share/class_test_interfaces/local_setup.dsv
 source;share/class_test_interfaces/local_setup.ps1

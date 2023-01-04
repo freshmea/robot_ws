@@ -11,6 +11,7 @@ class Num_srv(Node):
   def int_callback(self, request, response):
     self.sum = request.a + request.b + request.c
     response.sum = self.sum
+    self.get_logger().info(f'Incoming request \n a: {request.a}, b: {request.b}, c: {request.c}')
     return response
 
 

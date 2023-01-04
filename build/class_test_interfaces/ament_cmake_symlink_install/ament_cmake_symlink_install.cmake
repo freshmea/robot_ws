@@ -310,6 +310,96 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/class_test_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/class_test_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_c/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_c/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.h")
+
+# install(FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/class_test_interfaces/environment")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/class_test_interfaces/environment")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/class_test_interfaces/environment")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/class_test_interfaces/environment")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_fastrtps_c/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_fastrtps_c/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+
+# install("TARGETS" "class_test_interfaces__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_fastrtps_cpp/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_fastrtps_cpp/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+
+# install("TARGETS" "class_test_interfaces__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_introspection_c/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_introspection_c/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.h")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_cpp/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_cpp/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.hpp")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_introspection_cpp/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_typesupport_introspection_cpp/class_test_interfaces/" "DESTINATION" "include/class_test_interfaces" "PATTERN" "*.hpp")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/class_test_interfaces/environment")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/class_test_interfaces/environment")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/class_test_interfaces/environment")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/class_test_interfaces/environment")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_py/class_test_interfaces/__init__.py" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_py/class_test_interfaces/__init__.py" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_py/class_test_interfaces/msg/" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces/msg" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_py/class_test_interfaces/msg/" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces/msg" "PATTERN" "*.py")
+
+# install(DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_py/class_test_interfaces/srv/" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces/srv" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/class_test_interfaces" DIRECTORY "/home/aa/robot_ws/build/class_test_interfaces/rosidl_generator_py/class_test_interfaces/srv/" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces/srv" "PATTERN" "*.py")
+
+# install("TARGETS" "class_test_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces")
+include("/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "class_test_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces")
+include("/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "class_test_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/class_test_interfaces")
+include("/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "class_test_interfaces__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_adapter/class_test_interfaces/msg/Intfloat.idl" "DESTINATION" "share/class_test_interfaces/msg")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_adapter/class_test_interfaces/msg/Intfloat.idl" "DESTINATION" "share/class_test_interfaces/msg")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_adapter/class_test_interfaces/srv/AddThreeInts.idl" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_adapter/class_test_interfaces/srv/AddThreeInts.idl" "DESTINATION" "share/class_test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_adapter/class_test_interfaces/srv/MinusThreeInts.idl" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_adapter/class_test_interfaces/srv/MinusThreeInts.idl" "DESTINATION" "share/class_test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/src/class_test_interfaces/msg/Intfloat.msg" "DESTINATION" "share/class_test_interfaces/msg")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/src/class_test_interfaces/msg/Intfloat.msg" "DESTINATION" "share/class_test_interfaces/msg")
+
+# install(FILES "/home/aa/robot_ws/src/class_test_interfaces/srv/AddThreeInts.srv" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/src/class_test_interfaces/srv/AddThreeInts.srv" "DESTINATION" "share/class_test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/AddThreeInts_Request.msg" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/AddThreeInts_Request.msg" "DESTINATION" "share/class_test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/AddThreeInts_Response.msg" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/AddThreeInts_Response.msg" "DESTINATION" "share/class_test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/src/class_test_interfaces/srv/MinusThreeInts.srv" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/src/class_test_interfaces/srv/MinusThreeInts.srv" "DESTINATION" "share/class_test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/MinusThreeInts_Request.msg" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/MinusThreeInts_Request.msg" "DESTINATION" "share/class_test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/MinusThreeInts_Response.msg" "DESTINATION" "share/class_test_interfaces/srv")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/srv/MinusThreeInts_Response.msg" "DESTINATION" "share/class_test_interfaces/srv")
+
 # install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/class_test_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/class_test_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
@@ -345,6 +435,27 @@ ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" 
 
 # install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/class_test_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/class_test_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+
+# install(FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
 
 # install(FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_core/class_test_interfacesConfig.cmake" "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_core/class_test_interfacesConfig-version.cmake" "DESTINATION" "share/class_test_interfaces/cmake")
 ament_cmake_symlink_install_files("/home/aa/robot_ws/src/class_test_interfaces" FILES "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_core/class_test_interfacesConfig.cmake" "/home/aa/robot_ws/build/class_test_interfaces/ament_cmake_core/class_test_interfacesConfig-version.cmake" "DESTINATION" "share/class_test_interfaces/cmake")

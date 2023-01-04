@@ -5,6 +5,7 @@ resource/test_num
 test_num/__init__.py
 test_num/test_service_cli.py
 test_num/test_service_cli2.py
+test_num/test_service_client.py
 test_num/test_service_ser.py
 test_num/test_service_ser1.py
 test_num/test_service_ser2.py
