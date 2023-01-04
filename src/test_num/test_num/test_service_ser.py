@@ -19,10 +19,14 @@ class MService(Node):
 
 def main(args=None):
   rclpy.init(args = args)
-  mservice = MService()
-
-  rclpy.spin(mservice)
-  rclpy.shutdown()
+  node = MService()
+  try:
+    rclpy.spin(node)
+  except KeyboardInterrupt:
+    node.get_logger().info('Keyboard interrupt!!!!')
+  finally:
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
   main()

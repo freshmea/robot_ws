@@ -74,6 +74,7 @@ rosidl_generator_c/test_interfaces/msg/num.h: rosidl_adapter/test_interfaces/msg
 rosidl_generator_c/test_interfaces/msg/num.h: rosidl_adapter/test_interfaces/msg/Sphere.idl
 rosidl_generator_c/test_interfaces/msg/num.h: rosidl_adapter/test_interfaces/srv/AddThreeInts.idl
 rosidl_generator_c/test_interfaces/msg/num.h: rosidl_adapter/test_interfaces/srv/MinusThreeInts.idl
+rosidl_generator_c/test_interfaces/msg/num.h: rosidl_adapter/test_interfaces/action/Fibonacci.idl
 rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -135,6 +136,11 @@ rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/std_msgs/msg/U
 rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_c/test_interfaces/msg/num.h: /opt/ros/foxy/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/aa/robot_ws/build/test_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c__arguments.json
 
@@ -183,6 +189,18 @@ rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__struct.h: rosidl
 rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__type_support.h: rosidl_generator_c/test_interfaces/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__type_support.h
 
+rosidl_generator_c/test_interfaces/action/fibonacci.h: rosidl_generator_c/test_interfaces/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/action/fibonacci.h
+
+rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.h: rosidl_generator_c/test_interfaces/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.h
+
+rosidl_generator_c/test_interfaces/action/detail/fibonacci__struct.h: rosidl_generator_c/test_interfaces/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/action/detail/fibonacci__struct.h
+
+rosidl_generator_c/test_interfaces/action/detail/fibonacci__type_support.h: rosidl_generator_c/test_interfaces/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/action/detail/fibonacci__type_support.h
+
 rosidl_generator_c/test_interfaces/msg/detail/num__functions.c: rosidl_generator_c/test_interfaces/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/msg/detail/num__functions.c
 
@@ -194,6 +212,9 @@ rosidl_generator_c/test_interfaces/srv/detail/add_three_ints__functions.c: rosid
 
 rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c: rosidl_generator_c/test_interfaces/msg/num.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c
+
+rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c: rosidl_generator_c/test_interfaces/msg/num.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c
 
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/num__functions.c.o: CMakeFiles/test_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/num__functions.c.o: rosidl_generator_c/test_interfaces/msg/detail/num__functions.c
@@ -247,12 +268,26 @@ CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_inter
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c -o CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c.s
 
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.o: CMakeFiles/test_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.o: rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aa/robot_ws/build/test_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.o   -c /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c
+
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c > CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.i
+
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c -o CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.s
+
 # Object files for target test_interfaces__rosidl_generator_c
 test_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/num__functions.c.o" \
 "CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o" \
 "CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/srv/detail/add_three_ints__functions.c.o" \
-"CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c.o"
+"CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c.o" \
+"CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.o"
 
 # External object files for target test_interfaces__rosidl_generator_c
 test_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -261,31 +296,42 @@ libtest_interfaces__rosidl_generator_c.so: CMakeFiles/test_interfaces__rosidl_ge
 libtest_interfaces__rosidl_generator_c.so: CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c.o
 libtest_interfaces__rosidl_generator_c.so: CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/srv/detail/add_three_ints__functions.c.o
 libtest_interfaces__rosidl_generator_c.so: CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c.o
+libtest_interfaces__rosidl_generator_c.so: CMakeFiles/test_interfaces__rosidl_generator_c.dir/rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c.o
 libtest_interfaces__rosidl_generator_c.so: CMakeFiles/test_interfaces__rosidl_generator_c.dir/build.make
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_cpp.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_generator_c.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_introspection_cpp.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
-libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_cpp.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcpputils.so
 libtest_interfaces__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libtest_interfaces__rosidl_generator_c.so: CMakeFiles/test_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aa/robot_ws/build/test_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libtest_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aa/robot_ws/build/test_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libtest_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -313,10 +359,15 @@ CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/te
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.h
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__struct.h
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__type_support.h
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/action/fibonacci.h
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.h
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/action/detail/fibonacci__struct.h
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/action/detail/fibonacci__type_support.h
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/msg/detail/num__functions.c
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/msg/detail/sphere__functions.c
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/srv/detail/add_three_ints__functions.c
 CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/srv/detail/minus_three_ints__functions.c
+CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/test_interfaces/action/detail/fibonacci__functions.c
 	cd /home/aa/robot_ws/build/test_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aa/robot_ws/src/test_interfaces /home/aa/robot_ws/src/test_interfaces /home/aa/robot_ws/build/test_interfaces /home/aa/robot_ws/build/test_interfaces /home/aa/robot_ws/build/test_interfaces/CMakeFiles/test_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_interfaces__rosidl_generator_c.dir/depend
 

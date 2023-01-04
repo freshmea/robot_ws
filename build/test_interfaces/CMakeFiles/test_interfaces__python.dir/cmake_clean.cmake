@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/action/_fibonacci_s.c.o"
   "CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_num_s.c.o"
   "CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/msg/_sphere_s.c.o"
   "CMakeFiles/test_interfaces__python.dir/rosidl_generator_py/test_interfaces/srv/_add_three_ints_s.c.o"

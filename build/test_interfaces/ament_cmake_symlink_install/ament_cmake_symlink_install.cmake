@@ -358,6 +358,9 @@ ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/test_interfaces" DI
 # install(DIRECTORY "/home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/srv/" "DESTINATION" "lib/python3.8/site-packages/test_interfaces/srv" "PATTERN" "*.py")
 ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/test_interfaces" DIRECTORY "/home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/srv/" "DESTINATION" "lib/python3.8/site-packages/test_interfaces/srv" "PATTERN" "*.py")
 
+# install(DIRECTORY "/home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/action/" "DESTINATION" "lib/python3.8/site-packages/test_interfaces/action" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/aa/robot_ws/src/test_interfaces" DIRECTORY "/home/aa/robot_ws/build/test_interfaces/rosidl_generator_py/test_interfaces/action/" "DESTINATION" "lib/python3.8/site-packages/test_interfaces/action" "PATTERN" "*.py")
+
 # install("TARGETS" "test_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/test_interfaces")
 include("/home/aa/robot_ws/build/test_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
@@ -382,6 +385,9 @@ ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES 
 # install(FILES "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/srv/MinusThreeInts.idl" "DESTINATION" "share/test_interfaces/srv")
 ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/srv/MinusThreeInts.idl" "DESTINATION" "share/test_interfaces/srv")
 
+# install(FILES "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/action/Fibonacci.idl" "DESTINATION" "share/test_interfaces/action")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/action/Fibonacci.idl" "DESTINATION" "share/test_interfaces/action")
+
 # install(FILES "/home/aa/robot_ws/src/test_interfaces/msg/Num.msg" "DESTINATION" "share/test_interfaces/msg")
 ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES "/home/aa/robot_ws/src/test_interfaces/msg/Num.msg" "DESTINATION" "share/test_interfaces/msg")
 
@@ -405,6 +411,9 @@ ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES 
 
 # install(FILES "/home/aa/robot_ws/build/test_interfaces/rosidl_cmake/srv/MinusThreeInts_Response.msg" "DESTINATION" "share/test_interfaces/srv")
 ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES "/home/aa/robot_ws/build/test_interfaces/rosidl_cmake/srv/MinusThreeInts_Response.msg" "DESTINATION" "share/test_interfaces/srv")
+
+# install(FILES "/home/aa/robot_ws/src/test_interfaces/action/Fibonacci.action" "DESTINATION" "share/test_interfaces/action")
+ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES "/home/aa/robot_ws/src/test_interfaces/action/Fibonacci.action" "DESTINATION" "share/test_interfaces/action")
 
 # install(FILES "/home/aa/robot_ws/build/test_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/test_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/aa/robot_ws/src/test_interfaces" FILES "/home/aa/robot_ws/build/test_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/test_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

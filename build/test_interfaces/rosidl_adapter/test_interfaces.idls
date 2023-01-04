@@ -2,3 +2,4 @@
 /home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:msg/Sphere.idl
 /home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:srv/AddThreeInts.idl
 /home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:srv/MinusThreeInts.idl
+/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:action/Fibonacci.idl

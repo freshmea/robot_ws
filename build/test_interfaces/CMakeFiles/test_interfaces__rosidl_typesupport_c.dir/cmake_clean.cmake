@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/action/fibonacci__type_support.cpp.o"
   "CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/num__type_support.cpp.o"
   "CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp.o"
   "CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/srv/add_three_ints__type_support.cpp.o"
   "CMakeFiles/test_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_interfaces/srv/minus_three_ints__type_support.cpp.o"
   "libtest_interfaces__rosidl_typesupport_c.pdb"
   "libtest_interfaces__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/test_interfaces/action/fibonacci__type_support.cpp"
   "rosidl_typesupport_c/test_interfaces/msg/num__type_support.cpp"
   "rosidl_typesupport_c/test_interfaces/msg/sphere__type_support.cpp"
   "rosidl_typesupport_c/test_interfaces/srv/add_three_ints__type_support.cpp"

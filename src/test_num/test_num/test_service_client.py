@@ -19,7 +19,6 @@ class Num_cli(Node):
     self.req.b = self.var_b
     self.req.c = self.var_c
     self.future = self.cli.call_async(self.req)
-    print(self.future, self.req.a)
 
 def main(args = None):
   rclpy.init(args=args)

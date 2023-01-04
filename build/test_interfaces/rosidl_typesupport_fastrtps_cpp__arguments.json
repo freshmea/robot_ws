@@ -6,7 +6,8 @@
     "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:msg/Num.idl",
     "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:msg/Sphere.idl",
     "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:srv/AddThreeInts.idl",
-    "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:srv/MinusThreeInts.idl"
+    "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:srv/MinusThreeInts.idl",
+    "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces:action/Fibonacci.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
@@ -69,7 +70,12 @@
     "std_msgs:/opt/ros/foxy/share/std_msgs/msg/UInt8.idl",
     "std_msgs:/opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl",
     "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
-    "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl"
+    "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/foxy/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/foxy/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/foxy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
@@ -84,6 +90,7 @@
     "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/msg/Sphere.idl",
     "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/srv/AddThreeInts.idl",
     "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/srv/MinusThreeInts.idl",
+    "/home/aa/robot_ws/build/test_interfaces/rosidl_adapter/test_interfaces/action/Fibonacci.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl",
@@ -144,6 +151,11 @@
     "/opt/ros/foxy/share/std_msgs/msg/UInt8.idl",
     "/opt/ros/foxy/share/std_msgs/msg/UInt8MultiArray.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
-    "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl"
+    "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/foxy/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/foxy/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/foxy/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/foxy/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/foxy/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }
