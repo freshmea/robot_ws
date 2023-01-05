@@ -1,1 +1,0 @@
-/home/aa/robot_ws/build/test_interfaces/rosidl_generator_c/test_interfaces/srv/detail/add_three_ints__struct.h

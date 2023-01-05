@@ -1,1 +1,0 @@
-/home/aa/robot_ws/build/test_interfaces/rosidl_typesupport_introspection_cpp/test_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp

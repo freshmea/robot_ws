@@ -1,5 +1,0 @@
-int32 number
----
-int32[] array
----
-int32[] part_array

@@ -139,7 +139,7 @@ alias testsubimg='ros2 run image_tools showimage'
 		)
 		```
 		* package.xml 수정
-		'''
+		```
 		<buildtool_depend>rosidl_default_generators</buildtool_depend>
 		<depend>geometry_msgs</# This file is generated from information provided by the datasource.  Changes
 # to it will not persist across an instance reboot.  To disable cloud-init's

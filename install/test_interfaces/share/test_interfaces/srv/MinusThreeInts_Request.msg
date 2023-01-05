@@ -1,1 +1,0 @@
-/home/aa/robot_ws/build/test_interfaces/rosidl_cmake/srv/MinusThreeInts_Request.msg

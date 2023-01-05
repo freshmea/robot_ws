@@ -1,1 +1,0 @@
-/home/aa/robot_ws/src/test_interfaces/msg/Num.msg
