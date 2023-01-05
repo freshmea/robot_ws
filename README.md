@@ -125,3 +125,87 @@ alias testsubimg='ros2 run image_tools showimage'
 * 서비스 설명
 * 서비스 코드 작성
 * 인터페이스 패키지 만들기
+	* interface 용 패키지 만들고 topic, service 만듬 [test_interfaces/msg/Num.msg, test_interfaces/srv/AddThreeInts.srv, test_interfaces/srv/MinusThreeInts.srv]
+	* cmakelists.txt 수정
+		* find_package(rosidl_default_generators REQUIRED)
+		*
+		```
+		rosidl_generate_interfaces(${PROJECT_NAME}
+		"msg/Num.msg"
+		"msg/Sphere.msg"
+		"srv/AddThreeInts.srv"
+		"srv/MinusThreeInts.srv"
+		DEPENDENCIES geometry_msgs
+		)
+		```
+		* package.xml 수정
+		'''
+		<buildtool_depend>rosidl_default_generators</buildtool_depend>
+		<depend>geometry_msgs</# This file is generated from information provided by the datasource.  Changes
+# to it will not persist across an instance reboot.  To disable cloud-init's
+# network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: true
+      dhcp6: true
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: true
+      dhcp6: true
+      access-points:
+        turtle:
+          password: turtlebot3depend>
+		<exec_depend>rosidl_default_runtime</exec_depend>
+		<member_of_group>rosidl_interface_packages</member_of_group>
+		```
+	* test_num package 만들어서 service test
+		* test_service_ser, test_service_client ... 등등..
+	* 과제 : 한 노드에 두개의 서비스가 작동하게 만들기. AddThreeInts, MinusThreeInts.
+	* topic, service, action 의 차이점 설명
+	* parameter 설명.
+	*
+
+* 서비스 코드
+
+- - -
+# 2023_1_5
+- - -
+* action code 해석
+* action code flow 분석
+* parmameter 설명
+* turtlesim 으로 parameter 연습
+* launch 파일 작성과 launch 파일로 파라미터 작성 하고 적용하기
+	* 추가 : launch 파일을 패키지에 넣어서 share 적용하는법. - python
+	* 파일로 parameter를 저장해서 launch 파일로 불러와서 적용하는법. -python
+* 2시 - 터틀봇 개봉 및 설명.
+
+* 50-clound-init.yaml
+```
+# This file is generated from information provided by the datasource.  Changes
+# to it will not persist across an instance reboot.  To disable cloud-init's
+# network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: true
+      dhcp6: true
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: true
+      dhcp6: true
+      access-points:
+        turtle:
+          password: turtlebot3
+```
+
