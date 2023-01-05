@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/test_para
+test_para/__init__.py
+test_para/test_py_para.py
+test_para.egg-info/PKG-INFO
+test_para.egg-info/SOURCES.txt
+test_para.egg-info/dependency_links.txt
+test_para.egg-info/entry_points.txt
+test_para.egg-info/requires.txt
+test_para.egg-info/top_level.txt
+test_para.egg-info/zip-safe

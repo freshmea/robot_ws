@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
 from test_interfaces.action import Fibonacci
+from action_msgs.msg import GoalStatus
 
 class FibonacciActionClient(Node):
   def __init__(self):
@@ -29,7 +30,13 @@ class FibonacciActionClient(Node):
 
   def get_result_callback(self, future):
     result = future.result().result
-    self.get_logger().info(f'Result: {result.array}')
+    status = future.result().status
+    if status == GoalStatus.STATUS_SUCCEEDED:
+      self.get_logger().info(f'Result: {result.array}')
+    else :
+      self.get_logger().warning(f'Result: {status}')
+    if status == GoalStatus.STATUS_CANCELED:
+      self.get_logger().info(f'cancel!')
     rclpy.shutdown()
 
   def feedback_callback(self, feedback_msg):

@@ -1,0 +1,3 @@
+[console_scripts]
+tp = test_para.test_py_para:main
+
