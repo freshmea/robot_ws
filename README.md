@@ -208,4 +208,21 @@ network:
         turtle:
           password: turtlebot3
 ```
+* wifi와 wifi패스워드가 등록이 안되어 있는 터블봇이 있음. 수업 진행전 확인 필요.
+* nmap -sn ...../32 로 ip 확인하고 터틀봇에 접속
 
+* wifi 설정에 문제가 있어서 1시간 정도 지체됨.
+* 5시에 터틀봇 확인하고 패키지 설치
+	*
+	```
+	sudo apt-get install ros-foxy-gazebo-*
+	sudo apt install ros-foxy-cartographer
+	sudo apt install ros-foxy-cartographer-ros
+	sudo apt install ros-foxy-navigation2
+	sudo apt install ros-foxy-nav2-bringup
+	source ~/.bashrc
+	sudo apt install ros-foxy-dynamixel-sdk
+	sudo apt install ros-foxy-turtlebot3-msgs
+	sudo apt install ros-foxy-turtlebot3
+
+	```
