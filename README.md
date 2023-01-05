@@ -139,9 +139,11 @@ alias testsubimg='ros2 run image_tools showimage'
 		)
 		```
 		* package.xml 수정
-		```
+```
 		<buildtool_depend>rosidl_default_generators</buildtool_depend>
 		<depend>geometry_msgs</# This file is generated from information provided by the datasource.  Changes
+```
+```
 # to it will not persist across an instance reboot.  To disable cloud-init's
 # network configuration capabilities, write a file
 # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
@@ -163,7 +165,7 @@ network:
           password: turtlebot3depend>
 		<exec_depend>rosidl_default_runtime</exec_depend>
 		<member_of_group>rosidl_interface_packages</member_of_group>
-		```
+```
 	* test_num package 만들어서 service test
 		* test_service_ser, test_service_client ... 등등..
 	* 과제 : 한 노드에 두개의 서비스가 작동하게 만들기. AddThreeInts, MinusThreeInts.
@@ -226,3 +228,36 @@ network:
 	sudo apt install ros-foxy-turtlebot3
 
 	```
+* 추가 : launch 파일을 패키지에 넣어서 share 적용하는법. - python
+```
+import os
+from glob import glob
+from setuptools import setup
+
+package_name = 'py_param_tutorial'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=[package_name],
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='kimsooyoung',
+    maintainer_email='tge1375@naver.com',
+    description='TODO: Package description',
+    license='TODO: License declaration',
+    tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+            'param_example = py_param_tutorial.param_example:main',
+        ],
+    },
+)
+```
