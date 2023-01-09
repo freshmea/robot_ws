@@ -18,16 +18,16 @@ class ArucoNode(rclpy.node.Node):
     def __init__(self):
         super().__init__('aruco_node')
 
-        # Declare and read parameters     EX) .0515 == 51.5cm  
+        # Declare and read parameters     EX) .0515 == 51.5cm
         self.declare_parameter("marker_size", .0515)  # 기본 마커생성시 크기는 m 단위 입니다 여기서 생성된 마커의 실 크기를 측정해서 환산 후 입력하세요 [중요]
         self.declare_parameter("aruco_dictionary_id", "DICT_5X5_250") # 마커를 생성할떄 만들어진 DICT 정보를 입력하세요
         self.declare_parameter("image_topic", "/image_raw")
         # self.declare_parameter("image_topic", "/camera/image_raw") 기존 버전
-        self.declare_parameter("camera_info_topic", "/camera_info")
+        self.declare_parameter("camera_info_topic", "/camera/image/camera_info")
         # self.declare_parameter("camera_info_topic", "/camera/camera_info") 기존 버전
         self.declare_parameter("camera_frame", "default_cam")
-         # 여기서 부터 아래는 크게 건들거 없습니다 
-         
+         # 여기서 부터 아래는 크게 건들거 없습니다
+
         self.marker_size = self.get_parameter("marker_size").get_parameter_value().double_value
         dictionary_id_name = self.get_parameter(
             "aruco_dictionary_id").get_parameter_value().string_value
@@ -90,8 +90,8 @@ class ArucoNode(rclpy.node.Node):
         else:
             markers.header.frame_id = self.camera_frame
             pose_array.header.frame_id = self.camera_frame
-            
-            
+
+
         markers.header.stamp = img_msg.header.stamp
         pose_array.header.stamp = img_msg.header.stamp
 
