@@ -260,4 +260,8 @@ sudo dkms install -m rtl8812au -v 4.2.2
 * domain ID 가 달라도 상대편 터틀봇이 움직이는 현상 발견
 	* wifi와 랜선이 동시에 연결 되었을 때 랜선 연결을 끊지 않으면 domain ID가 달라도 topic 이 전달 되는것 같음.
 
-asd
+* aruco node 사용.
+  * https://github.com/leeeju/aruco_marker-in-ROS2.git
+    * 빌드에 문제 있음 - __init__.py 파일과 resource/ros2_aruce 파일이 없음.
+    * freshmea/imgtran Node으로 compressedimg 를 rawimage 로 바꾸어야 함. 
+    * 
