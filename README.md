@@ -127,9 +127,10 @@ alias testsubimg='ros2 run image_tools showimage'
 * 인터페이스 패키지 만들기
 	* interface 용 패키지 만들고 topic, service 만듬 [test_interfaces/msg/Num.msg, test_interfaces/srv/AddThreeInts.srv, test_interfaces/srv/MinusThreeInts.srv]
 	* cmakelists.txt 수정
-		* find_package(rosidl_default_generators REQUIRED)
-		*
-		```
+
+```
+		find_package(rosidl_default_generators REQUIRED)
+
 		rosidl_generate_interfaces(${PROJECT_NAME}
 		"msg/Num.msg"
 		"msg/Sphere.msg"
@@ -137,11 +138,16 @@ alias testsubimg='ros2 run image_tools showimage'
 		"srv/MinusThreeInts.srv"
 		DEPENDENCIES geometry_msgs
 		)
-		```
+```
 		* package.xml 수정
-		'''
+
+```
 		<buildtool_depend>rosidl_default_generators</buildtool_depend>
 		<depend>geometry_msgs</# This file is generated from information provided by the datasource.  Changes
+```
+
+*		터틀봇의 etc/netplan/50-ini....
+```
 # to it will not persist across an instance reboot.  To disable cloud-init's
 # network configuration capabilities, write a file
 # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
@@ -163,7 +169,7 @@ network:
           password: turtlebot3depend>
 		<exec_depend>rosidl_default_runtime</exec_depend>
 		<member_of_group>rosidl_interface_packages</member_of_group>
-		```
+```
 	* test_num package 만들어서 service test
 		* test_service_ser, test_service_client ... 등등..
 	* 과제 : 한 노드에 두개의 서비스가 작동하게 만들기. AddThreeInts, MinusThreeInts.
@@ -270,4 +276,9 @@ sudo dkms install -m rtl8812au -v 4.2.2
     * freshmea/imgtran Node으로 compressedimg 를 rawimage 로 바꾸어야 함.
 
 * github 문제 수정. 패키지를 받았을 때 .git 폴더 지우고 push
-* wifi 속도 문제 인터넷 연결 없이 공유기로만 연결 했을 때 조금 빨라짐.
+* wifi 속도 문제 인터넷 연결 없이 공유기로만 연결 했을 때 정상적으로 빨라짐.
+* 터틀봇 움직이거나 scan data발행에는 문제 없음.
+* raspicam2-node에서 발행하는 Topic 이 너무 느림. 평균 0.15 Hz
+* 적어도 30 Hz이상으로 나와야 프로젝트 하는데 문제가 없어 보임.
+
+

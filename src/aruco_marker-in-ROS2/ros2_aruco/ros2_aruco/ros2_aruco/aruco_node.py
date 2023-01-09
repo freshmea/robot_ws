@@ -25,7 +25,7 @@ class ArucoNode(rclpy.node.Node):
         # self.declare_parameter("image_topic", "/camera/image_raw") 기존 버전
         self.declare_parameter("camera_info_topic", "/camera/image/camera_info")
         # self.declare_parameter("camera_info_topic", "/camera/camera_info") 기존 버전
-        self.declare_parameter("camera_frame", "default_cam")
+        self.declare_parameter("camera_frame", "camera")
          # 여기서 부터 아래는 크게 건들거 없습니다
 
         self.marker_size = self.get_parameter("marker_size").get_parameter_value().double_value
