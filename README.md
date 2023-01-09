@@ -261,7 +261,12 @@ sudo dkms install -m rtl8812au -v 4.2.2
 	* wifi와 랜선이 동시에 연결 되었을 때 랜선 연결을 끊지 않으면 domain ID가 달라도 topic 이 전달 되는것 같음.
 
 * aruco node 사용.
+	* ar marker generator 사용.
+		* ros2 run ros2_aruco aruco_generate_marker --id 1 --size 200 --dictionary DICT_4X4_100
+		*
   * https://github.com/leeeju/aruco_marker-in-ROS2.git
     * 빌드에 문제 있음 - __init__.py 파일과 resource/ros2_aruce 파일이 없음.
-    * freshmea/imgtran Node으로 compressedimg 를 rawimage 로 바꾸어야 함. 
-    * 
+		* transformation 파일 없음.
+    * freshmea/imgtran Node으로 compressedimg 를 rawimage 로 바꾸어야 함.
+
+* github 문제 수정. 패키지를 받았을 때 .git 폴더 지우고 push
