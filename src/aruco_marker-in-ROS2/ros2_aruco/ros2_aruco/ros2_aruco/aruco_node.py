@@ -81,7 +81,8 @@ class ArucoNode(rclpy.node.Node):
             return
 
         cv_image = self.bridge.imgmsg_to_cv2(img_msg,
-                                             desired_encoding='mono8')
+                                             desired_encoding='8UC3')
+        print('aaa')
         markers = ArucoMarkers()
         pose_array = PoseArray()
         if self.camera_frame is None:

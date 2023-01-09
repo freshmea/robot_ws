@@ -270,3 +270,4 @@ sudo dkms install -m rtl8812au -v 4.2.2
     * freshmea/imgtran Node으로 compressedimg 를 rawimage 로 바꾸어야 함.
 
 * github 문제 수정. 패키지를 받았을 때 .git 폴더 지우고 push
+* wifi 속도 문제 인터넷 연결 없이 공유기로만 연결 했을 때 조금 빨라짐.
