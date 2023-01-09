@@ -139,11 +139,9 @@ alias testsubimg='ros2 run image_tools showimage'
 		)
 		```
 		* package.xml 수정
-```
+		'''
 		<buildtool_depend>rosidl_default_generators</buildtool_depend>
 		<depend>geometry_msgs</# This file is generated from information provided by the datasource.  Changes
-```
-```
 # to it will not persist across an instance reboot.  To disable cloud-init's
 # network configuration capabilities, write a file
 # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
@@ -165,7 +163,7 @@ network:
           password: turtlebot3depend>
 		<exec_depend>rosidl_default_runtime</exec_depend>
 		<member_of_group>rosidl_interface_packages</member_of_group>
-```
+		```
 	* test_num package 만들어서 service test
 		* test_service_ser, test_service_client ... 등등..
 	* 과제 : 한 노드에 두개의 서비스가 작동하게 만들기. AddThreeInts, MinusThreeInts.
@@ -228,74 +226,38 @@ network:
 	sudo apt install ros-foxy-turtlebot3
 
 	```
-* 추가 : launch 파일을 패키지에 넣어서 share 적용하는법. - python
+* ros2 launch turtlebot3_bringup robot.launch.py
+* export TURTLEBOT3_MODEL=burger -- 터틀봇의 bashrc 에 export 명령어가 없는 터틀봇이 있음.
+
+- - -
+# 2023_1_6
+- - -
+* 파라미터 파일로 설정하는 방법과 패키지에 넣는 방법 설명.
+* config 의 yaml 파일이 install 의 올바른 경로로 복사되지 않는 문제가 발생. - 원인 추후 해결.
+* 터틀봇 wifi 연결 문제. 공유기의 ip 가 컴퓨터의 맥 주소와 일치하지 않으면 topic이 wifi로 전달되지 않는 문제 발생
+---> 컴퓨터와 같이 켜서 인증 문제를 해결하고 실행. 해결
+* 노틸러스 sftp 설정.
+* tb3 move 패키지 만들어서 터틀봇 움직임 제어.
+* 와이파이 공유기 새로 설치 하고 turtle1, turtle2 로 접속
+* 카메라 모듈 나누어줌.
+* 카메라 세팅.
+- - -
+# 2023_1_9
+- - -
+* tp_link 802ac - USB wifi driver 설치
 ```
-import os
-from glob import glob
-from setuptools import setup
-
-package_name = 'py_param_tutorial'
-
-setup(
-    name=package_name,
-    version='0.0.0',
-    packages=[package_name],
-    data_files=[
-        ('share/ament_index/resource_index/packages',
-            ['resource/' + package_name]),
-        ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
-    ],
-    install_requires=['setuptools'],
-    zip_safe=True,
-    maintainer='kimsooyoung',
-    maintainer_email='tge1375@naver.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
-    tests_require=['pytest'],
-    entry_points={
-        'console_scripts': [
-            'param_example = py_param_tutorial.param_example:main',
-        ],
-    },
-)
+sudo apt purge rtl8812au-dkms
+sudo apt install git
+git clone https://github.com/gnab/rtl8812au.git
+sudo cp -r rtl8812au  /usr/src/rtl8812au-4.2.2
+sudo dkms add -m rtl8812au -v 4.2.2
+sudo dkms build -m rtl8812au -v 4.2.2
+sudo dkms install -m rtl8812au -v 4.2.2
 ```
-* 파일로 parameter를 저장해서 launch 파일로 불러와서 적용하는법. -python
-```
-import os
+	* -> 속도 빨라짐. 원활한 통신 환경을 위해서 좋은 wifi 모듈이 필요함. 아니면 노트북 와이파이 사용 권장.
+* 어댑터 전원 이슈가 있음
+	* 배터리로 동작 하면 잘 되는데 어댑터로 오래 연결시 라즈베리파이가 꺼짐. 군산대 학교 220V 전원 정류문제가 있는듯.
+* domain ID 가 달라도 상대편 터틀봇이 움직이는 현상 발견
+	* wifi와 랜선이 동시에 연결 되었을 때 랜선 연결을 끊지 않으면 domain ID가 달라도 topic 이 전달 되는것 같음.
 
-from ament_index_python.packages import get_package_share_directory
-from launch import LaunchDescription
-from launch_ros.actions import Node
-
-def generate_launch_description():
-
-    param_ex_node = Node(
-        package='py_param_tutorial',
-        executable='param_example',
-        name='param_example',
-        output='screen',
-        parameters=[
-            {'string_param': 'Hello'},
-            {'int_param': 112},
-        ],
-    )
-
-    # config = os.path.join(
-    #     get_package_share_directory('py_param_tutorial'), 'config', 'params.yaml'
-    # )
-    
-    # param_ex_node = Node(
-    #     package = 'py_param_tutorial',
-    #     executable = 'param_example',
-    #     name = 'param_example',
-    #     output='screen',
-    #     parameters = [config]
-    # )
-
-
-    return LaunchDescription([
-        param_ex_node
-    ])
-```
+asd
