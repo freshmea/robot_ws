@@ -291,3 +291,8 @@ sudo dkms install -m rtl8812au -v 4.2.2
 * GIPO zero 사용법  https://blog.naver.com/PostView.naver?blogId=emperonics&logNo=221831160948&redirect=Dlog&widgetTypeCall=true&directAccess=false
 * https://www.raspberrypi-spy.co.uk/2018/02/basic-servo-use-with-the-raspberry-pi/
 * GPIO zero reference https://gpiozero.readthedocs.io/en/stable/installing.html
+* rossearial micro-ros https://github.com/micro-ROS
+* https://micro.ros.org/docs/concepts/middleware/rosserial/
+* RTOS 관련 https://vuzwa.tistory.com/entry/1-Free-RTOSwith-STM32L475VGT-B-L475E-IOT01A1
+
+
