@@ -281,4 +281,13 @@ sudo dkms install -m rtl8812au -v 4.2.2
 * raspicam2-node에서 발행하는 Topic 이 너무 느림. 평균 0.15 Hz
 * 적어도 30 Hz이상으로 나와야 프로젝트 하는데 문제가 없어 보임.
 
-
+- - -
+# 2023_1_9
+- - -
+* GPIO 적용법
+* https://m.blog.naver.com/audiendo/220771658560
+* GPIO 사용법 http://lhdangerous.godohosting.com/wiki/index.php/Raspberry_pi_%EC%97%90%EC%84%9C_python%EC%9C%BC%EB%A1%9C_GPIO_%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+* GPIO pwm 제어 https://rasino.tistory.com/341
+* GIPO zero 사용법  https://blog.naver.com/PostView.naver?blogId=emperonics&logNo=221831160948&redirect=Dlog&widgetTypeCall=true&directAccess=false
+* https://www.raspberrypi-spy.co.uk/2018/02/basic-servo-use-with-the-raspberry-pi/
+* GPIO zero reference https://gpiozero.readthedocs.io/en/stable/installing.html
