@@ -11,6 +11,7 @@
 		* git clone https://github.com/christianrauch/raspicam2_node.git
 		* sudo apt autoremove --purge libgles2-mesa-dev mesa-common-dev 충돌하는 비디오제거
 		* sudo add-apt-repository ppa:ubuntu-pi-flavour-makers/ppa 파이캠 필요한 라이브러리
+			* https://askubuntu.com/questions/1130052/enable-i2c-on-raspberry-pi-ubuntu
 		* sudo apt install libraspberrypi-bin libraspberrypi-dev 파이캠 필요한 라이브러리
 		* sudo usermod -a -G video ubuntu 카메라 유저권한 접근성 등록.
 		* sudo apt-get install v4l-utils
@@ -314,5 +315,30 @@ sudo dkms install -m rtl8812au -v 4.2.2
 	* sudo apt install python3-pip
 	* pip install RPi.GPIO
 
+* raspi-config 를 하지 않아도 되는것도 같음..( 확인 필요)
+	* https://velog.io/@hanbyeolee/Raspberry-Pi-4b-Ubuntu-20.04.5-LTS%EC%97%90-Picamera-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95
 
+* 카메라 속도 관련 문제를 해결하기 위해 kernel 과 drive 그리고 라즈베리파이 버전을 확인해서 호환이나
+다른 문제가 없는지 확인 필요
+	* https://slowbootkernelhacks.blogspot.com/2020/06/pi-camera-sensor-camera-device-driver.html
+
+
+- - -
+# 2023_1_11
+- - -
+## ROS 관련 자료 찾아 볼 수 있는 곳
+* ROS QnA : 로스 QnA
+	* https://answers.ros.org/questions/
+* 오로카 카페 : 한국 로스 커뮤니티
+	* https://cafe.naver.com/openrt
+* ROS2 reference : ros 함수 모아 놓은 곳
+	* https://docs.ros2.org/bouncy/api/rclcpp/classrclcpp_1_1_node.html
+* ROS2 foxy document : foxy 관련 튜토리얼
+	* https://docs.ros.org/en/foxy/index.html
+* REP( Ros enhencement proposals) : ros의 code가 왜 그런지 궁금하면 살펴봄.
+	* https://ros.org/reps/rep-0000.html
+* ros robot : ros로 개발된 로봇 사이트
+	* https://robots.ros.org/
+
+## SLAM 스터디
 *
