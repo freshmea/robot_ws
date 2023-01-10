@@ -20,6 +20,11 @@
 		* sudo apt-get install libnewt0.52 whiptail parted triggerhappy lua5.1 alsa-utils -y 라스피컨피크 설치
 		* sudo apt-get install -fy
 		* sudo dpkg -i /tmp/raspi-config_20160527_all.deb
+		* /boot/firmware/config.txt 파일 맨 밑에 추가
+```
+		start_x=1
+		gpu_mem=128
+```
 	* sudo apt install ros-foxy-image-tnsport* 노트북에 관련 패키지 설치.
 * 터틀봇에 아두이노 붙여서 사용하기.
 
@@ -282,7 +287,7 @@ sudo dkms install -m rtl8812au -v 4.2.2
 * 적어도 30 Hz이상으로 나와야 프로젝트 하는데 문제가 없어 보임.
 
 - - -
-# 2023_1_9
+# 2023_1_10
 - - -
 * GPIO 적용법
 * https://m.blog.naver.com/audiendo/220771658560
@@ -295,4 +300,19 @@ sudo dkms install -m rtl8812au -v 4.2.2
 * https://micro.ros.org/docs/concepts/middleware/rosserial/
 * RTOS 관련 https://vuzwa.tistory.com/entry/1-Free-RTOSwith-STM32L475VGT-B-L475E-IOT01A1
 
+* 프로젝트 관련 참고할 영상과 git
+	* https://www.youtube.com/watch?v=5JBPTG4YDPo
+	* https://www.youtube.com/watch?v=YSudyAsMKbo
+	* https://www.youtube.com/watch?v=9Wnu8If1eS4
+	* https://www.youtube.com/watch?v=1Tdwe7aAvMI
+		* https://github.com/JooYeonO/manipulator_project
+	* https://sol2log.notion.site/Robot-house-wife-eca1bc5608d64ebcb52f89a0dc2358a0
+		* https://github.com/freshmea/robot_housewife
 
+* 터틀봇3에 인스톨 GPIO
+	* sudo apt-get install python-rpi.gpio
+	* sudo apt install python3-pip
+	* pip install RPi.GPIO
+
+
+*
