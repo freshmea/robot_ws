@@ -25,7 +25,7 @@
 		start_x=1
 		gpu_mem=128
 ```
-	* sudo apt install ros-foxy-image-tnsport* 노트북에 관련 패키지 설치.
+	* sudo apt install ros-foxy-image-transport* 노트북에 관련 패키지 설치.
 * 터틀봇에 아두이노 붙여서 사용하기.
 
 
