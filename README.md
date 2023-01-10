@@ -341,4 +341,12 @@ sudo dkms install -m rtl8812au -v 4.2.2
 	* https://robots.ros.org/
 
 ## SLAM 스터디
-*
+* 슬램 기본 설명:
+	* https://saint-swithins-day.tistory.com/83
+	* https://github.com/tzutalin/awesome-visual-slam
+	* ORB SLAM2 : https://www.youtube.com/watch?v=7LSV7sjvPaU
+	* NeRF : https://www.youtube.com/watch?v=kN7kIwRBKis
+	* https://www.youtube.com/watch?v=kN7kIwRBKis
+
+
+
