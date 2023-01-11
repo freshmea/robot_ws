@@ -348,5 +348,20 @@ sudo dkms install -m rtl8812au -v 4.2.2
 	* NeRF : https://www.youtube.com/watch?v=kN7kIwRBKis
 	* https://www.youtube.com/watch?v=kN7kIwRBKis
 
+- - -
+# 2023_1_12
+- - -
+
+* navigation action 관련 파일
+	* action 정의 파일
+		* /opt/ros/foxy/share/nav2_msgs/action/FollowWaypoints.action
+	* 런치 파일
+		* /opt/ros/foxy/share/turtlebot3_navigation2/launch/navigation2.launch.py
+		* /opt/ros/foxy/share/navigation_bringup/launch/navigation_launch.py
+	* 소스파일은 바이너리 밖에 없음.
+* followwaypoints 소스파일(waypoint_follower)
+	*https://github.com/jackykwok2024/nav2_rviz_waypoint_follower/blob/master/src/waypoint_tool.cpp
+
+
 
 
