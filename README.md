@@ -366,6 +366,9 @@ sudo dkms install -m rtl8812au -v 4.2.2
 * followwaypoints 소스파일(waypoint_follower)
 	*https://github.com/jackykwok2024/nav2_rviz_waypoint_follower/blob/master/src/waypoint_tool.cpp
 
+* odom 변수 초기화 하기
+	* https://answers.ros.org/question/213049/how-do-i-reset-the-odom-topic-back-to-0-without-restarting-the-robot/
+	* ros2 topic pub /mobile_base/commands/reset_odometry std_msgs/Empty
 
 
 
