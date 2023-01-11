@@ -368,7 +368,10 @@ sudo dkms install -m rtl8812au -v 4.2.2
 
 * odom 변수 초기화 하기
 	* https://answers.ros.org/question/213049/how-do-i-reset-the-odom-topic-back-to-0-without-restarting-the-robot/
-	* ros2 topic pub /mobile_base/commands/reset_odometry std_msgs/Empty
+	* 초기화 : ros2 topic pub /mobile_base/commands/reset_odometry std_msgs/Empty
+	* https://github.com/ROBOTIS-GIT/turtlebot3/issues/880
+	* 초기위치 변경 : ros2 topic pub -1 /pose_relocalization geometry_msgs/Point
+
 
 
 
