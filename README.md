@@ -348,6 +348,10 @@ sudo dkms install -m rtl8812au -v 4.2.2
 	* NeRF : https://www.youtube.com/watch?v=kN7kIwRBKis
 	* https://www.youtube.com/watch?v=kN7kIwRBKis
 
+* DDS 의 설정 변경으로 카메라 속도를 테스트할 필요가 있음
+	* https://docs.ros.org/en/galactic/How-To-Guides/DDS-tuning.html
+* 터틀봇 라스피캠 실행시 cpu 점유율과 네트워크 점유율 확인 필요.
+
 - - -
 # 2023_1_12
 - - -
