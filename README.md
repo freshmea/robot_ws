@@ -429,3 +429,13 @@ TCP window size: 85.0 KByte (default)
 ```
 ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
 ```
+
+* 네비게이션 로봇 크기와 inflation 변경 하는 방법 ---> 이건 반드시 보시오!!!!
+	* /opt/ros/foxy/share/nav2_bringup/params/nav2_params.yaml 수정
+		* local_costmap: local_costmap: ros_parameters: robot_radius  0.11변경
+		* local_costmap: local_costmap: ros_parameters: inflation_layer: cost_scaling_factor:  0.3변경
+		* local_costmap: local_costmap: ros_parameters: inflation_layer: inflation_radius: 0.055 변경
+		* global_costmap: global_costmap: ros_parameters: robot_radius  0.11변경
+		* global_costmap: global_costmap: ros_parameters: inflation_layer: cost_scaling_factor:  0.3변경
+		* global_costmap: global_costmap: ros_parameters: inflation_layer: inflation_radius: 0.055 변경
+	* 네비게이션 관련 변경한 내용이 있으면 turtlebot3_navi 에 있는 param 건들지 말고 여기거를 건드려야 적용됨.
