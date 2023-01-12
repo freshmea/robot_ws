@@ -425,4 +425,7 @@ TCP window size: 85.0 KByte (default)
 
 * quality 를 엄청 낮추어서 90 -> 9 로 해결
 	* ~/turtlebot3_ws/src/raspicam2_node/cfg/params.yaml 수정
-
+	* 파람 실행 명령어
+```
+ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
+```
