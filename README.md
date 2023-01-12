@@ -342,6 +342,8 @@ ros2 run imgtran imgtransfer
 	* https://ros.org/reps/rep-0000.html
 * ros robot : ros로 개발된 로봇 사이트
 	* https://robots.ros.org/
+* ros nav2 관련 설명을 자세히 하고 있음
+	* https://leesangwon0114.github.io/ros2/2022/01/24/ROS2_TurtleBot3_11.Nav2_ROS_Concepts.html
 
 ## SLAM 스터디
 * 슬램 기본 설명:
