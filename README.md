@@ -351,27 +351,35 @@ sudo dkms install -m rtl8812au -v 4.2.2
 * DDS 의 설정 변경으로 카메라 속도를 테스트할 필요가 있음
 	* https://docs.ros.org/en/galactic/How-To-Guides/DDS-tuning.html
 * 터틀봇 라스피캠 실행시 cpu 점유율과 네트워크 점유율 확인 필요.
+* topic 의 size 를 확인 할 수 있는 수단 필요.
+* 네트워크가 감당할 수 있는 data 의 양과 dds 가 처리 할 수 있는 data 의 양 그리고 실제로 네트워크에서 움직이는
+data 를 비교 할 수 있는 툴 필요.
 
 - - -
 # 2023_1_12
 - - -
 
-* navigation action 관련 파일
-	* action 정의 파일
-		* /opt/ros/foxy/share/nav2_msgs/action/FollowWaypoints.action
-	* 런치 파일
-		* /opt/ros/foxy/share/turtlebot3_navigation2/launch/navigation2.launch.py
-		* /opt/ros/foxy/share/navigation_bringup/launch/navigation_launch.py
-	* 소스파일은 바이너리 밖에 없음.
-* followwaypoints 소스파일(waypoint_follower)
-	*https://github.com/jackykwok2024/nav2_rviz_waypoint_follower/blob/master/src/waypoint_tool.cpp
-
-* odom 변수 초기화 하기
+* odom 변수 초기화 하기 - 초기 odom 값이 map 의 범위를 벗어나면 nav가 실행 되지 않을 때 수행.
 	* https://answers.ros.org/question/213049/how-do-i-reset-the-odom-topic-back-to-0-without-restarting-the-robot/
 	* 초기화 : ros2 topic pub /mobile_base/commands/reset_odometry std_msgs/Empty
 	* https://github.com/ROBOTIS-GIT/turtlebot3/issues/880
 	* 초기위치 변경 : ros2 topic pub -1 /pose_relocalization geometry_msgs/Point
 
+* navigation
+	* waypoint_folloew 접근 하는 방법
+		* launch 파일에서 node 를 찾고 opt/ros/foxy 안쪽에서 파일을 확인한다.
+		* 소스파일이 바이너리 밖에 없으면 인터넷에서 찾아본다.
+	* navigation action 관련 파일
+		* action 정의 파일
+			* /opt/ros/foxy/share/nav2_msgs/action/FollowWaypoints.action
+		* 런치 파일
+			* /opt/ros/foxy/share/turtlebot3_navigation2/launch/navigation2.launch.py
+			* /opt/ros/foxy/share/navigation_bringup/launch/navigation_launch.py
+		* 소스파일은 바이너리 밖에 없음.
+			* followwaypoints 소스파일(waypoint_follower) 비슷하게 만든 것(C++)
+				* https://github.com/jackykwok2024/nav2_rviz_waypoint_follower/blob/master/src/waypoint_tool.cpp
+	* python 파일로 만든 followwaypoint action 파일.
+		* imgtan 패키지 안에 followwaypoint.py
 
 
 
