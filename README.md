@@ -324,9 +324,6 @@ ros2 run imgtran imgtransfer
 * raspi-config 를 하지 않아도 되는것도 같음..( 확인 필요)
 	* https://velog.io/@hanbyeolee/Raspberry-Pi-4b-Ubuntu-20.04.5-LTS%EC%97%90-Picamera-%EC%84%A4%EC%B9%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95
 
-* 카메라 속도 관련 문제를 해결하기 위해 kernel 과 drive 그리고 라즈베리파이 버전을 확인해서 호환이나
-다른 문제가 없는지 확인 필요
-	* https://slowbootkernelhacks.blogspot.com/2020/06/pi-camera-sensor-camera-device-driver.html
 
 
 - - -
@@ -354,8 +351,7 @@ ros2 run imgtran imgtransfer
 	* NeRF : https://www.youtube.com/watch?v=kN7kIwRBKis
 	* https://www.youtube.com/watch?v=kN7kIwRBKis
 
-* DDS 의 설정 변경으로 카메라 속도를 테스트할 필요가 있음
-	* https://docs.ros.org/en/galactic/How-To-Guides/DDS-tuning.html
+
 * 터틀봇 라스피캠 실행시 cpu 점유율과 네트워크 점유율 확인 필요.
 * topic 의 size 를 확인 할 수 있는 수단 필요.
 * 네트워크가 감당할 수 있는 data 의 양과 dds 가 처리 할 수 있는 data 의 양 그리고 실제로 네트워크에서 움직이는
@@ -387,5 +383,46 @@ data 를 비교 할 수 있는 툴 필요.
 	* python 파일로 만든 followwaypoint action 파일.
 		* imgtan 패키지 안에 followwaypoint.py
 
+*카메라 속도 관련
+	* DDS 의 설정 변경으로 카메라 속도를 테스트할 필요가 있음
+		* https://docs.ros.org/en/galactic/How-To-Guides/DDS-tuning.html
+			* sudo sysctl net.ipv4.ipfrag_time=3
+			* sudo sysctl net.ipv4.ipfrag_high_thresh=134217728
+			* 실행해 보면 크게 좋아 짐. 0.25 Hz -> 4 Hz
+			*
+	*
 
+* 카메라 속도 관련 문제를 해결하기 위해 kernel 과 drive 그리고 라즈베리파이 버전을 확인해서 호환이나
+다른 문제가 없는지 확인 필요
+	* https://slowbootkernelhacks.blogspot.com/2020/06/pi-camera-sensor-camera-device-driver.html
+
+* sudo apt-get install speedtest-cli
+
+* server cli속도 측정을 위해서 퍼프 설치
+	* sudo apt-get install iperf
+	* 실행 결과 4Mbit/s 500kbye/s 정도가 최대속도임.
+```
+------------------------------------------------------------
+Client connecting to 192.168.0.5, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.0.6 port 34994 connected with 192.168.0.5 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-10.3 sec  5.38 MBytes  4.38 Mbits/sec
+```
+* 카메라 노드 실행중 topic size 는
+```
+17.76 KB/s from 26 messages
+	Message size mean: 30.93 KB min: 26.13 KB max: 32.23 KB
+17.38 KB/s from 26 messages
+	Message size mean: 30.93 KB min: 26.13 KB max: 32.23 KB
+```
+* 좀더 성능을 향상 시킬 가능성은 있지만 (초당 17 에서 500 까지 ) 다른 토픽 들도 많기 때문에 그리고 터틀봇이 3대 이상 연결 된다면 wifi 한계 때문에 원활한 영상 전송은 힘들거 같다.
+	* 그래도 프로젝트를 한 사람들이 있음
+		* https://deepdeepit.tistory.com/118
+		* https://github.com/DonGikS/behavior_controller
+			* jpg quality를 더 낮추어서 해결했음.(value = 9 ? )
+
+* quality 를 엄청 낮추어서 90 -> 9 로 해결
+	* ~/turtlebot3_ws/src/raspicam2_node/cfg/params.yaml 수정
 
