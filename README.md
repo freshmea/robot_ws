@@ -280,6 +280,12 @@ sudo dkms install -m rtl8812au -v 4.2.2
     * 빌드에 문제 있음 - __init__.py 파일과 resource/ros2_aruce 파일이 없음.
 		* transformation 파일 없음.
     * freshmea/imgtran Node으로 compressedimg 를 rawimage 로 바꾸어야 함.
+```
+cd ~/robot_ws/src
+git clone https://github.com/freshmea/ros2_compressed_to_img_node.git
+source ~/.bashrc
+ros2 run imgtran imgtransfer
+```
 
 * github 문제 수정. 패키지를 받았을 때 .git 폴더 지우고 push
 * wifi 속도 문제 인터넷 연결 없이 공유기로만 연결 했을 때 정상적으로 빨라짐.
