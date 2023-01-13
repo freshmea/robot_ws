@@ -6,6 +6,7 @@
 * 군산대 발표용 google slide  : <https://docs.google.com/presentation/d/1jwksntFzRzFbpEtHJCzOahT5loVWIPO-PtTMm4BnxtY/edit?usp=sharing>
 * 수업 figma 파일 링크 :
 <https://www.figma.com/file/O3kvivFXVoUVVv0GKIfq4N/%EA%B5%B0%EC%82%B0%EB%8C%80-ROS2-%EC%88%98%EC%97%85?node-id=0%3A1&t=8QLYeoqWDnsbhHLL-1>
+* 중간발표 영상 <https://photos.app.goo.gl/paB3937ShA3Xmvnt8>
 
 - - -
 
@@ -117,7 +118,7 @@ alias ac='ament_cpplint'
 alias testpub='ros2 run demo_nodes_cpp talker'
 alias testsub='ros2 run demo_nodes_cpp listener'
 alias testpubimg='ros2 run image_tools cam2image'
-alias testsubimg='ros2 run image_tools showimage'
+alias testsubimg='rhttps://photos.app.goo.gl/paB3937ShA3Xmvnt8os2 run image_tools showimage'
 ```
 
 * 1교시 메세지 퍼블리셔 섭스크라이버 작성.
