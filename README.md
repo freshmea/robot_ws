@@ -2,9 +2,8 @@
 
 2022 gunsan-universe ros2
 
-* 교재 공유파일 <https://docs.google.com/document/d/1M5vvPW4T-iGDn9OfTm11QD2-iIx4zfwA/edit?usp=sharing&ouid=110802073475643720339&rtpof=true&sd=true>
 * <https://github.com/naver/nanumfont>
-* Saas 연습 google slide  : <https://docs.google.com/presentation/d/1jwksntFzRzFbpEtHJCzOahT5loVWIPO-PtTMm4BnxtY/edit?usp=sharing>
+* 군산대 발표용 google slide  : <https://docs.google.com/presentation/d/1jwksntFzRzFbpEtHJCzOahT5loVWIPO-PtTMm4BnxtY/edit?usp=sharing>
 * 수업 figma 파일 링크 :
 <https://www.figma.com/file/O3kvivFXVoUVVv0GKIfq4N/%EA%B5%B0%EC%82%B0%EB%8C%80-ROS2-%EC%88%98%EC%97%85?node-id=0%3A1&t=8QLYeoqWDnsbhHLL-1>
 
