@@ -352,9 +352,11 @@ sudo dkms install -m rtl8812au -v 4.2.2
 	* https://docs.ros.org/en/galactic/How-To-Guides/DDS-tuning.html
 * 터틀봇 라스피캠 실행시 cpu 점유율과 네트워크 점유율 확인 필요.
 
-- - -
-# 2023_1_12
-- - -
+* Catographer 
+	* funtamennt explane : 
+	* https://blog.naver.com/PostView.naver?blogId=ycpiglet&logNo=222153686510
+	* https://google-cartographer-ros.readthedocs.io/en/latest/index.html
+	* 
 
 * navigation action 관련 파일
 	* action 정의 파일
@@ -372,6 +374,10 @@ sudo dkms install -m rtl8812au -v 4.2.2
 	* https://github.com/ROBOTIS-GIT/turtlebot3/issues/880
 	* 초기위치 변경 : ros2 topic pub -1 /pose_relocalization geometry_msgs/Point
 
+- - -
+# 2023_1_12
+- - -
 
+* 
 
 
