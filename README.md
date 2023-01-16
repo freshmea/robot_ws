@@ -396,13 +396,20 @@ ros2 run imgtran imgtransfer
   * NeRF : <https://www.youtube.com/watch?v=kN7kIwRBKis>
   * <https://www.youtube.com/watch?v=kN7kIwRBKis>
 
+* Catographer
+  * funtamennt explane :
+  * <https://blog.naver.com/PostView.naver?blogId=ycpiglet&logNo=222153686510>
+  * <https://google-cartographer-ros.readthedocs.io/en/latest/index.html>
+
 * 터틀봇 라스피캠 실행시 cpu 점유율과 네트워크 점유율 확인 필요.
 * topic 의 size 를 확인 할 수 있는 수단 필요.
 * 네트워크가 감당할 수 있는 data 의 양과 dds 가 처리 할 수 있는 data 의 양 그리고 실제로 네트워크에서 움직이는
 data 를 비교 할 수 있는 툴 필요.
 
 - - -
-# 2023_1_12
+
+## 2023_1_12
+
 - - -
 
 * odom 변수 초기화 하기 - 초기 odom 값이 map 의 범위를 벗어나면 nav가 실행 되지 않을 때 수행.
@@ -470,8 +477,6 @@ TCP window size: 85.0 KByte (default)
  Message size mean: 30.93 KB min: 26.13 KB max: 32.23 KB
 ```
 
-
-
 ```bash
 ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix raspicam2`/share/raspicam2/cfg/params.yaml
 ```
@@ -485,8 +490,3 @@ ros2 run raspicam2 raspicam2_node --ros-args --params-file `ros2 pkg prefix rasp
     * global_costmap: global_costmap: ros_parameters: inflation_layer: cost_scaling_factor:  0.3변경
     * global_costmap: global_costmap: ros_parameters: inflation_layer: inflation_radius: 0.055 변경
   * 네비게이션 관련 변경한 내용이 있으면 turtlebot3_navi 에 있는 param 건들지 말고 여기거를 건드려야 적용됨.
-* Catographer 
-	* funtamennt explane : 
-	* https://blog.naver.com/PostView.naver?blogId=ycpiglet&logNo=222153686510
-	* https://google-cartographer-ros.readthedocs.io/en/latest/index.html
-	* 
