@@ -24,7 +24,8 @@ setup(
             ' ms = m_pubsub.msub:main',
             ' mt = m_pubsub.mtime:main',
             ' met = m_pubsub.metime:main',
-            ' metp = m_pubsub.metimepub:main'
+            ' metp = m_pubsub.metimepub:main',
+            ' isdp = m_pubsub.image_center_depth_pub:main'
         ],
     },
 )
